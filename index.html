@@ -1,0 +1,1504 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>جزوه جامع مطالعات اجتماعی هشتم | تعاون و دولت — درس ۱ تا ۴</title>
+<meta name="description" content="جزوه تعاملی و انیمیشن‌دار مطالعات اجتماعی پایه هشتم: درس‌های ۱ تا ۴ (تعاون و دولت) همراه با توضیح هایلایت‌های کتاب و امتحان ۳۰ سؤالی">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;800;900&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<style>
+/* ============ RESET & VARIABLES ============ */
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#f2f6ff; --bg2:#e9efff; --card:#ffffff; --ink:#1e293b; --muted:#5b6b84;
+  --primary:#5b5ef0; --primary2:#8b5cf6; --teal:#0ea5a4; --pink:#ec4899; --orange:#f59e0b;
+  --green:#10b981; --red:#ef4444; --blue:#3b82f6;
+  --hl:#fff3a3; --hl2:#ffd9a0; --border:#e3e9f5;
+  --shadow:0 12px 34px rgba(91,94,240,.13);
+  --shadow-lg:0 24px 60px rgba(91,94,240,.22);
+  --r:22px;
+}
+html.dark{
+  --bg:#0a1122; --bg2:#0e1730; --card:#131d38; --ink:#e8edf8; --muted:#9aa8c7;
+  --border:#233257; --hl:#8a7a1e; --hl2:#8a5a1e;
+  --shadow:0 12px 34px rgba(0,0,0,.45); --shadow-lg:0 24px 60px rgba(0,0,0,.55);
+}
+html{scroll-behavior:smooth}
+html,body{overflow-x:hidden}
+@supports(overflow-x:clip){html,body{overflow-x:clip}}
+body{
+  font-family:'Vazirmatn',Tahoma,'Segoe UI',sans-serif;
+  background:var(--bg); color:var(--ink); line-height:2.1; overflow-x:hidden;
+  transition:background .5s ease,color .5s ease;
+  background-image:radial-gradient(circle at 15% 20%,rgba(91,94,240,.07) 0,transparent 40%),
+                   radial-gradient(circle at 85% 60%,rgba(236,72,153,.06) 0,transparent 40%),
+                   radial-gradient(circle at 50% 95%,rgba(14,165,164,.07) 0,transparent 40%);
+}
+::selection{background:var(--primary);color:#fff}
+img{max-width:100%}
+p{margin:10px 0}
+/* ============ SCROLLBAR ============ */
+::-webkit-scrollbar{width:11px}
+::-webkit-scrollbar-track{background:var(--bg2)}
+::-webkit-scrollbar-thumb{background:linear-gradient(var(--primary),var(--primary2));border-radius:10px}
+/* ============ PROGRESS BAR ============ */
+#progressBar{position:fixed;top:0;right:0;height:5px;width:0%;z-index:9999;
+  background:linear-gradient(90deg,var(--primary),var(--pink),var(--orange),var(--green));
+  border-radius:0 0 0 6px;transition:width .15s linear;box-shadow:0 0 12px rgba(91,94,240,.7)}
+/* ============ NAVBAR ============ */
+nav{position:sticky;top:0;z-index:900;background:color-mix(in srgb,var(--card) 82%,transparent);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--border);box-shadow:0 4px 24px rgba(30,41,59,.08)}
+.nav-inner{max-width:1150px;margin:auto;display:flex;align-items:center;gap:14px;padding:10px 20px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:9px;font-weight:900;font-size:1.02rem;white-space:nowrap}
+.brand .logo{width:40px;height:40px;border-radius:13px;display:grid;place-items:center;font-size:1.2rem;
+  background:linear-gradient(135deg,var(--primary),var(--pink));color:#fff;
+  animation:logoSpin 9s ease-in-out infinite;box-shadow:0 6px 16px rgba(91,94,240,.4)}
+@keyframes logoSpin{0%,100%{transform:rotate(0) scale(1)}50%{transform:rotate(8deg) scale(1.08)}}
+.nav-links{display:flex;gap:4px;flex-wrap:wrap;align-items:center;margin-inline-start:auto}
+.nav-links a{color:var(--ink);text-decoration:none;font-size:.83rem;font-weight:700;padding:7px 13px;border-radius:12px;transition:.3s;white-space:nowrap}
+.nav-links a:hover{background:linear-gradient(135deg,var(--primary),var(--primary2));color:#fff;transform:translateY(-2px);box-shadow:0 6px 14px rgba(91,94,240,.35)}
+#studyPill{font-size:.75rem;font-weight:800;color:var(--primary);background:color-mix(in srgb,var(--primary) 12%,transparent);
+  padding:5px 12px;border-radius:99px;border:1px dashed var(--primary);white-space:nowrap}
+#themeBtn{border:1.5px solid var(--border);background:var(--card);color:var(--ink);width:40px;height:40px;border-radius:12px;
+  cursor:pointer;font-size:1.1rem;transition:.3s;display:grid;place-items:center}
+#themeBtn:hover{transform:rotate(20deg) scale(1.1);box-shadow:var(--shadow)}
+/* ============ COVER ============ */
+.cover{position:relative;min-height:94vh;display:flex;flex-direction:column;justify-content:center;align-items:center;
+  text-align:center;padding:70px 22px 90px;overflow:hidden;
+  background:linear-gradient(135deg,#312e81 0%,#5b5ef0 45%,#9333ea 100%)}
+.cover::before{content:"";position:absolute;inset:0;
+  background-image:radial-gradient(rgba(255,255,255,.14) 1.5px,transparent 1.5px);
+  background-size:34px 34px;animation:drift 26s linear infinite;opacity:.6}
+@keyframes drift{from{background-position:0 0}to{background-position:340px 170px}}
+.blob{position:absolute;border-radius:50%;filter:blur(60px);opacity:.55;animation:blobFloat 11s ease-in-out infinite;pointer-events:none}
+.blob.b1{width:340px;height:340px;background:#22d3ee;top:-90px;right:-90px}
+.blob.b2{width:300px;height:300px;background:#f472b6;bottom:-70px;left:-70px;animation-delay:-4s}
+.blob.b3{width:230px;height:230px;background:#fbbf24;top:38%;left:9%;animation-delay:-7s}
+@keyframes blobFloat{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(-26px,22px) scale(1.1)}66%{transform:translate(20px,-26px) scale(.93)}}
+.floaty{position:absolute;font-size:2rem;opacity:.5;animation:floaty 7s ease-in-out infinite;pointer-events:none}
+@keyframes floaty{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-26px) rotate(9deg)}}
+.cover>*:not(.blob):not(.floaty){position:relative;z-index:2}
+.blob{z-index:0}
+.cover-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);
+  color:#fff;padding:8px 20px;border-radius:99px;font-weight:700;font-size:.88rem;backdrop-filter:blur(6px);
+  animation:popIn .8s .2s both}
+.cover-badge .dot{width:9px;height:9px;border-radius:50%;background:#4ade80;box-shadow:0 0 0 0 rgba(74,222,128,.7);animation:pulseDot 1.8s infinite}
+@keyframes pulseDot{70%{box-shadow:0 0 0 11px rgba(74,222,128,0)}100%{box-shadow:0 0 0 0 rgba(74,222,128,0)}}
+.cover h1{font-size:clamp(2.1rem,6vw,3.9rem);font-weight:900;color:#fff;margin:22px 0 8px;line-height:1.55;
+  animation:riseUp .9s .35s both;text-shadow:0 10px 40px rgba(0,0,0,.3)}
+.cover h1 .grad{background:linear-gradient(90deg,#fde68a,#f9a8d4,#a5f3fc,#fde68a);background-size:280% 100%;
+  -webkit-background-clip:text;background-clip:text;color:transparent;animation:gradMove 6s linear infinite}
+@keyframes gradMove{to{background-position:280% 0}}
+.cover .sub{color:rgba(255,255,255,.92);font-size:clamp(.95rem,2.4vw,1.14rem);max-width:680px;font-weight:500;
+  animation:riseUp .9s .55s both}
+.cover-stats{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin:30px 0 34px;animation:riseUp .9s .75s both}
+.cstat{background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.3);backdrop-filter:blur(8px);
+  padding:12px 22px;border-radius:18px;color:#fff;min-width:120px;transition:.35s}
+.cstat:hover{transform:translateY(-6px) scale(1.04);background:rgba(255,255,255,.22)}
+.cstat b{display:block;font-size:1.35rem;font-weight:900}
+.cstat span{font-size:.76rem;opacity:.9}
+.cover-cta{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;animation:riseUp .9s .95s both}
+.btn{border:none;cursor:pointer;font-family:inherit;font-weight:800;border-radius:16px;padding:14px 30px;font-size:.98rem;
+  transition:.3s;display:inline-flex;align-items:center;gap:9px;text-decoration:none}
+.btn-white{background:#fff;color:var(--primary);box-shadow:0 12px 30px rgba(0,0,0,.25)}
+.btn-white:hover{transform:translateY(-4px) scale(1.03);box-shadow:0 18px 40px rgba(0,0,0,.32)}
+.btn-glass{background:rgba(255,255,255,.15);color:#fff;border:1.5px solid rgba(255,255,255,.45);backdrop-filter:blur(6px)}
+.btn-glass:hover{background:rgba(255,255,255,.28);transform:translateY(-4px)}
+.scroll-hint{margin-top:52px;color:#fff;font-size:.8rem;opacity:.85;animation:riseUp 1s 1.2s both}
+.mouse{width:26px;height:42px;border:2.5px solid #fff;border-radius:14px;margin:8px auto 0;position:relative}
+.mouse::after{content:"";position:absolute;top:8px;right:50%;transform:translateX(50%);width:5px;height:9px;border-radius:3px;background:#fff;animation:wheel 1.5s infinite}
+@keyframes wheel{0%{opacity:1;top:8px}100%{opacity:0;top:24px}}
+@keyframes riseUp{from{opacity:0;transform:translateY(34px)}to{opacity:1;transform:none}}
+@keyframes popIn{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:scale(1)}}
+/* ============ LAYOUT ============ */
+main{max-width:1150px;margin:auto;padding:56px 18px 40px}
+section{scroll-margin-top:96px}
+.reveal{opacity:0;transform:translateY(34px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.3,1.1)}
+.reveal.visible{opacity:1;transform:none}
+.section-head{text-align:center;margin:70px 0 38px}
+.section-head .emoji-chip{font-size:2.2rem;display:inline-block;padding:14px 18px;border-radius:20px;margin-bottom:12px;
+  box-shadow:var(--shadow);animation:floaty 5s ease-in-out infinite}
+.section-head h2{font-size:clamp(1.5rem,4vw,2.2rem);font-weight:900}
+.section-head .bar{width:120px;height:6px;border-radius:6px;margin:14px auto 0;background:linear-gradient(90deg,var(--primary),var(--pink),var(--orange));background-size:200% 100%;animation:gradMove 4s linear infinite}
+.section-head .desc{color:var(--muted);max-width:640px;margin:14px auto 0;font-size:.94rem}
+</style>
+<style>
+/* ============ CARDS & BOXES ============ */
+.card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:26px 26px;box-shadow:var(--shadow);
+  transition:transform .35s ease,box-shadow .35s ease;position:relative;overflow:hidden}
+.card:hover{transform:translateY(-7px);box-shadow:var(--shadow-lg)}
+.card .c-icon{font-size:1.7rem;width:56px;height:56px;border-radius:17px;display:grid;place-items:center;margin-bottom:12px;
+  background:linear-gradient(135deg,color-mix(in srgb,var(--primary) 18%,transparent),color-mix(in srgb,var(--pink) 15%,transparent))}
+.card h3{font-size:1.12rem;font-weight:900;margin-bottom:6px}
+.card p{font-size:.92rem;color:var(--ink)}
+.muted{color:var(--muted)}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+/* highlighter marker (متن هایلایت‌شده کتاب) */
+.book-hl{background:var(--card);border:1.5px dashed var(--orange);border-radius:var(--r);padding:22px 24px;margin:22px 0;
+  position:relative;box-shadow:var(--shadow)}
+.book-hl::before{content:"🖍️ متن هایلایت‌شده کتاب";position:absolute;top:-15px;right:20px;background:linear-gradient(135deg,var(--orange),#fbbf24);
+  color:#4a2b00;font-size:.74rem;font-weight:900;padding:3px 14px;border-radius:99px;box-shadow:0 6px 14px rgba(245,158,11,.4)}
+.book-hl .hl-text{font-size:1.02rem;font-weight:800;line-height:2.3}
+.book-hl .hl-text mark{background:linear-gradient(transparent 45%,var(--hl) 45%);color:inherit;padding:0 3px;border-radius:3px;animation:hlGlow 3.5s ease-in-out infinite}
+@keyframes hlGlow{0%,100%{background:linear-gradient(transparent 45%,var(--hl) 45%)}50%{background:linear-gradient(transparent 25%,var(--hl) 25%)}}
+.book-hl .why{margin-top:12px;font-size:.9rem;color:var(--muted);border-right:3px solid var(--orange);padding-right:12px}
+.book-hl .why b{color:var(--orange)}
+/* definition box */
+.def-box{background:linear-gradient(135deg,color-mix(in srgb,var(--primary) 9%,var(--card)),var(--card));
+  border-right:6px solid var(--primary);border-radius:16px;padding:18px 22px;margin:18px 0;box-shadow:var(--shadow)}
+.def-box .d-title{font-weight:900;color:var(--primary);display:flex;align-items:center;gap:8px;margin-bottom:4px}
+/* quran / hadith */
+.quran-box{background:linear-gradient(135deg,#064e3b,#0f766e);color:#e6fffa;border-radius:var(--r);padding:30px 28px;margin:22px 0;
+  text-align:center;box-shadow:0 18px 44px rgba(13,148,136,.35);position:relative;overflow:hidden}
+.quran-box::before,.quran-box::after{content:"﴿";position:absolute;font-size:7rem;color:rgba(255,255,255,.12);font-family:serif;top:-14px}
+.quran-box::before{right:10px}.quran-box::after{content:"﴾";left:10px;top:auto;bottom:-30px}
+.quran-box .q-ar{font-family:'Amiri',serif;font-size:1.5rem;line-height:2.4;font-weight:700}
+.quran-box .q-fa{margin-top:12px;font-size:.95rem;font-weight:600;border-top:1px dashed rgba(255,255,255,.3);padding-top:12px}
+.quran-box .q-src{margin-top:8px;font-size:.78rem;opacity:.85}
+.hadith-box{background:linear-gradient(135deg,#7c2d92,#a21caf);color:#fdf4ff;border-radius:var(--r);padding:24px 26px;margin:22px 0;
+  box-shadow:0 18px 44px rgba(162,28,175,.3);position:relative}
+.hadith-box .h-icon{position:absolute;top:-14px;right:22px;background:#fff;color:#a21caf;font-size:1.1rem;font-weight:900;
+  padding:4px 14px;border-radius:99px;box-shadow:0 6px 14px rgba(0,0,0,.25)}
+.hadith-box .h-text{font-size:1.05rem;font-weight:800;line-height:2.2}
+.hadith-box .h-src{font-size:.78rem;opacity:.9;margin-top:6px}
+/* story cards */
+.story{border-radius:var(--r);padding:24px;background:var(--card);border:1px solid var(--border);box-shadow:var(--shadow);position:relative;transition:.35s}
+.story:hover{transform:translateY(-6px) rotate(.4deg);box-shadow:var(--shadow-lg)}
+.story .s-tag{position:absolute;top:-13px;right:18px;color:#fff;font-size:.76rem;font-weight:900;padding:4px 16px;border-radius:99px;box-shadow:0 6px 14px rgba(0,0,0,.2)}
+.story .s-title{font-weight:900;font-size:1.05rem;margin:6px 0 4px}
+.story p{font-size:.9rem}
+.story .s-moral{margin-top:10px;background:color-mix(in srgb,var(--green) 12%,transparent);border:1px dashed var(--green);
+  color:color-mix(in srgb,var(--green) 70%,var(--ink));border-radius:12px;padding:8px 14px;font-size:.84rem;font-weight:700}
+/* steps */
+.steps{counter-reset:step;margin:20px 0}
+.step{display:flex;gap:16px;align-items:flex-start;padding:16px 0;position:relative}
+.step:not(:last-child)::before{content:"";position:absolute;top:64px;bottom:-8px;right:26px;width:3px;border-radius:3px;
+  background:linear-gradient(var(--primary),color-mix(in srgb,var(--primary) 15%,transparent))}
+.step .s-num{counter-increment:step;flex:none;width:54px;height:54px;border-radius:50%;display:grid;place-items:center;
+  font-size:1.15rem;background:linear-gradient(135deg,var(--primary),var(--primary2));color:#fff;font-weight:900;
+  box-shadow:0 8px 20px rgba(91,94,240,.4);transition:.3s}
+.step:hover .s-num{transform:scale(1.15) rotate(-6deg)}
+.step .s-num::before{content:counter(step)}
+.step .s-body b{font-size:.98rem}
+.step .s-body p{font-size:.88rem;color:var(--muted);margin:2px 0 0}
+/* chips */
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0}
+.chip{background:var(--card);border:1.5px solid var(--border);border-radius:99px;padding:8px 18px;font-size:.87rem;font-weight:700;
+  transition:.3s;box-shadow:0 4px 12px rgba(30,41,59,.06);cursor:default}
+.chip:hover{transform:translateY(-4px) scale(1.05);border-color:var(--primary);color:var(--primary);box-shadow:var(--shadow)}
+/* levels */
+.level{border-radius:20px;padding:20px;text-align:center;background:var(--card);border:1px solid var(--border);box-shadow:var(--shadow);transition:.35s}
+.level:hover{transform:translateY(-8px) scale(1.02);box-shadow:var(--shadow-lg)}
+.level .l-emoji{font-size:2rem;margin-bottom:6px;display:block}
+.level b{font-size:.98rem}
+.level p{font-size:.8rem;color:var(--muted);margin:4px 0 0}
+/* terms */
+.term-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin:18px 0}
+.term{border-radius:18px;padding:18px;background:linear-gradient(135deg,color-mix(in srgb,var(--teal) 10%,var(--card)),var(--card));
+  border:1.5px solid color-mix(in srgb,var(--teal) 40%,var(--border));transition:.3s}
+.term:hover{transform:scale(1.03);box-shadow:var(--shadow-lg)}
+.term .t-word{font-weight:900;color:var(--teal);font-size:1.05rem}
+.term p{font-size:.85rem;margin:4px 0 0}
+/* vs compare */
+.vs-wrap{display:grid;grid-template-columns:1fr auto 1fr;gap:16px;align-items:stretch;margin:18px 0}
+.vs-col{border-radius:var(--r);padding:20px;box-shadow:var(--shadow)}
+.vs-col.rights{background:linear-gradient(135deg,color-mix(in srgb,var(--green) 12%,var(--card)),var(--card));border:1.5px solid color-mix(in srgb,var(--green) 45%,var(--border))}
+.vs-col.duties{background:linear-gradient(135deg,color-mix(in srgb,var(--orange) 12%,var(--card)),var(--card));border:1.5px solid color-mix(in srgb,var(--orange) 45%,var(--border))}
+.vs-col h4{font-size:1rem;font-weight:900;display:flex;gap:8px;align-items:center;margin-bottom:10px}
+.vs-col ul{list-style:none}
+.vs-col li{font-size:.88rem;padding:7px 0;border-bottom:1px dashed var(--border)}
+.vs-col li:last-child{border-bottom:none}
+.vs-badge{display:grid;place-items:center;font-weight:900;color:var(--muted);font-size:1rem}
+/* checklist */
+.check-list{list-style:none;margin:14px 0}
+.check-list li{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:12px 18px;margin:10px 0;
+  font-size:.92rem;font-weight:600;transition:.3s;box-shadow:0 4px 12px rgba(30,41,59,.05)}
+.check-list li:hover{transform:translateX(-6px);border-color:var(--primary)}
+.check-list li .ck{width:26px;height:26px;border-radius:8px;background:linear-gradient(135deg,var(--green),#34d399);color:#fff;
+  display:inline-grid;place-items:center;font-size:.85rem;font-weight:900;vertical-align:middle;margin-inline-end:10px;margin-top:-4px}
+/* ministry grid */
+.ministry-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:12px;margin:18px 0}
+.ministry{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:11px 15px;font-size:.83rem;font-weight:700;
+  display:flex;gap:9px;align-items:center;transition:.3s;box-shadow:0 4px 10px rgba(30,41,59,.05)}
+.ministry:hover{transform:translateY(-4px) scale(1.02);border-color:var(--pink);box-shadow:0 10px 22px rgba(236,72,153,.2)}
+.ministry .m-ic{flex:none;width:34px;height:34px;border-radius:10px;background:color-mix(in srgb,var(--pink) 14%,transparent);display:grid;place-items:center;font-size:1rem}
+/* tooltip */
+.tip{position:relative;border-bottom:2px dotted var(--pink);cursor:help;font-weight:800;color:var(--pink)}
+.tip::after{content:attr(data-tip);position:absolute;bottom:135%;right:50%;transform:translateX(50%) scale(.7);width:max-content;max-width:270px;
+  background:#1e293b;color:#fff;font-size:.76rem;font-weight:600;line-height:1.9;padding:9px 14px;border-radius:12px;
+  opacity:0;pointer-events:none;transition:.25s;z-index:50;box-shadow:0 10px 26px rgba(0,0,0,.35);text-align:center}
+.tip:hover::after{opacity:1;transform:translateX(50%) scale(1)}
+/* done toggle */
+.done-bar{display:flex;justify-content:center;margin:34px 0 8px}
+.done-btn{border:2px dashed var(--green);background:color-mix(in srgb,var(--green) 8%,transparent);color:var(--green);
+  font-family:inherit;font-weight:900;font-size:.95rem;padding:12px 30px;border-radius:99px;cursor:pointer;transition:.35s}
+.done-btn:hover{transform:scale(1.05)}
+.done-btn.on{background:linear-gradient(135deg,var(--green),#34d399);color:#fff;border-style:solid;box-shadow:0 10px 26px rgba(16,185,129,.4)}
+/* summary box */
+.sum-box{background:linear-gradient(135deg,color-mix(in srgb,var(--blue) 10%,var(--card)),var(--card));border:1.5px solid color-mix(in srgb,var(--blue) 40%,var(--border));
+  border-radius:var(--r);padding:22px 26px;margin:24px 0;box-shadow:var(--shadow)}
+.sum-box h4{color:var(--blue);font-weight:900;font-size:1.05rem;display:flex;gap:8px;align-items:center;margin-bottom:8px}
+.sum-box ul{list-style:none}
+.sum-box li{font-size:.9rem;padding:6px 0}
+.sum-box li::before{content:"⚡";display:inline-block;margin-inline-end:9px;font-size:.85rem}
+/* golden points */
+.gold-box{border-radius:var(--r);padding:20px 22px;background:linear-gradient(135deg,color-mix(in srgb,var(--orange) 14%,var(--card)),var(--card));
+  border:1.5px solid color-mix(in srgb,var(--orange) 50%,var(--border));box-shadow:var(--shadow);transition:.35s;position:relative}
+.gold-box:hover{transform:translateY(-5px) rotate(.5deg);box-shadow:var(--shadow-lg)}
+.gold-box .g-num{position:absolute;top:-13px;right:16px;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;
+  background:linear-gradient(135deg,var(--orange),#fbbf24);color:#fff;font-weight:900;font-size:.85rem;box-shadow:0 6px 14px rgba(245,158,11,.5)}
+.gold-box p{font-size:.87rem;margin:6px 0 0;font-weight:600}
+.gold-box b{color:var(--orange)}
+/* diagram 3 powers */
+.pow-wrap{position:relative;margin:26px 0}
+.pow-top{max-width:340px;margin:0 auto;background:linear-gradient(135deg,#312e81,#5b5ef0);color:#fff;text-align:center;
+  border-radius:20px;padding:16px 22px;font-weight:900;font-size:1.08rem;box-shadow:0 16px 40px rgba(49,46,129,.45);position:relative;z-index:2}
+.pow-top small{display:block;font-weight:500;font-size:.78rem;opacity:.85}
+.pow-lines{display:flex;justify-content:center;gap:0;height:46px;position:relative}
+.pow-lines::before{content:"";position:absolute;top:0;bottom:0;right:50%;width:3px;background:var(--primary);transform:translateX(50%)}
+.pow-lines::after{content:"";position:absolute;top:0;right:calc(50% - min(33%,190px));left:calc(50% - min(33%,190px));height:3px;background:var(--primary)}
+.pow-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px}
+.pow{border-radius:var(--r);padding:20px;background:var(--card);border-top:6px solid var(--primary);box-shadow:var(--shadow);transition:.35s;text-align:center}
+.pow:hover{transform:translateY(-8px);box-shadow:var(--shadow-lg)}
+.pow .p-emoji{font-size:1.9rem}
+.pow h4{font-weight:900;margin:6px 0 2px}
+.pow .p-org{font-size:.82rem;font-weight:800;color:var(--primary);background:color-mix(in srgb,var(--primary) 10%,transparent);border-radius:99px;padding:3px 12px;display:inline-block;margin:6px 0}
+.pow p{font-size:.83rem;color:var(--muted)}
+/* budget diagram */
+.bud-wrap{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:20px 0}
+.bud{border-radius:18px;padding:20px;text-align:center;font-weight:800;box-shadow:var(--shadow);transition:.3s}
+.bud:hover{transform:scale(1.04)}
+.bud.in{background:linear-gradient(135deg,color-mix(in srgb,var(--green) 16%,var(--card)),var(--card));border:2px solid var(--green)}
+.bud.out{background:linear-gradient(135deg,color-mix(in srgb,var(--red) 13%,var(--card)),var(--card));border:2px solid var(--red)}
+.bud .b-emoji{font-size:1.6rem;display:block;margin-bottom:4px}
+.bud ul{list-style:none;text-align:right;font-size:.84rem;font-weight:600;margin-top:8px}
+.bud li{padding:3px 0}
+.bud-eq{text-align:center;font-size:2.2rem;font-weight:900;color:var(--primary);margin:6px 0;animation:pulseSoft 2.4s ease-in-out infinite}
+@keyframes pulseSoft{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.18);opacity:.75}}
+/* accordion */
+details.acc{background:var(--card);border:1px solid var(--border);border-radius:16px;margin:12px 0;box-shadow:var(--shadow);overflow:hidden;transition:.3s}
+details.acc summary{cursor:pointer;list-style:none;padding:16px 20px;font-weight:800;font-size:.95rem;display:flex;align-items:center;gap:10px;transition:.3s}
+details.acc summary::-webkit-details-marker{display:none}
+details.acc summary::after{content:"＋";margin-inline-start:auto;font-weight:900;color:var(--primary);transition:.35s}
+details.acc[open] summary::after{transform:rotate(45deg)}
+details.acc summary:hover{background:color-mix(in srgb,var(--primary) 6%,transparent)}
+details.acc .acc-body{padding:4px 22px 18px;font-size:.9rem;color:var(--ink);border-top:1px dashed var(--border);animation:accOpen .4s ease}
+@keyframes accOpen{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
+/* TOC */
+.toc{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.toc-item{display:flex;gap:14px;align-items:center;background:var(--card);border:1px solid var(--border);border-radius:20px;
+  padding:18px 20px;text-decoration:none;color:var(--ink);box-shadow:var(--shadow);transition:.35s;position:relative;overflow:hidden}
+.toc-item::after{content:"";position:absolute;inset:auto 0 0 0;height:5px;background:var(--tc,var(--primary));transform:scaleX(0);transform-origin:right;transition:.4s}
+.toc-item:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
+.toc-item:hover::after{transform:scaleX(1)}
+.toc-item .t-emoji{flex:none;width:56px;height:56px;border-radius:16px;display:grid;place-items:center;font-size:1.6rem;
+  background:color-mix(in srgb,var(--tc,var(--primary)) 13%,transparent)}
+.toc-item b{display:block;font-size:.98rem}
+.toc-item span{font-size:.8rem;color:var(--muted)}
+.toc-item .go{margin-inline-start:auto;color:var(--tc,var(--primary));font-weight:900;font-size:1.1rem;transition:.3s}
+.toc-item:hover .go{transform:translateX(-6px)}
+/* QUIZ */
+.quiz-wrap{max-width:880px;margin:auto}
+.quiz-panel{display:none;animation:popIn .5s both}
+.quiz-panel.show{display:block}
+.q-intro{background:linear-gradient(135deg,#312e81,#9333ea);color:#fff;border-radius:26px;padding:40px 30px;text-align:center;
+  box-shadow:var(--shadow-lg);position:relative;overflow:hidden}
+.q-intro::before{content:"";position:absolute;inset:0;background:radial-gradient(rgba(255,255,255,.15) 1.5px,transparent 1.5px);background-size:26px 26px;animation:drift 18s linear infinite}
+.q-intro>*{position:relative}
+.q-intro h3{font-size:1.7rem;font-weight:900;margin-bottom:8px}
+.q-intro p{font-size:.95rem;opacity:.95}
+.q-rules{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin:22px 0}
+.q-rule{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);border-radius:16px;padding:10px 18px;font-size:.85rem;font-weight:700;backdrop-filter:blur(6px)}
+.btn-start{background:#fff;color:#6d28d9;font-size:1.1rem;padding:15px 46px;border-radius:99px;box-shadow:0 14px 34px rgba(0,0,0,.3)}
+.btn-start:hover{transform:scale(1.06) translateY(-3px)}
+.q-topbar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;background:var(--card);border:1px solid var(--border);
+  border-radius:18px;padding:12px 18px;margin-bottom:18px;box-shadow:var(--shadow)}
+.q-timer{font-weight:900;font-size:1rem;color:var(--pink);background:color-mix(in srgb,var(--pink) 10%,transparent);
+  padding:6px 16px;border-radius:99px;display:flex;gap:7px;align-items:center;font-variant-numeric:tabular-nums}
+.q-count{font-weight:900;color:var(--primary)}
+.q-progress{flex:1;min-width:120px;height:12px;background:var(--bg2);border-radius:99px;overflow:hidden}
+.q-progress i{display:block;height:100%;border-radius:99px;width:0;transition:width .4s ease;
+  background:linear-gradient(90deg,var(--primary),var(--pink))}
+.q-card{background:var(--card);border:1px solid var(--border);border-radius:24px;padding:28px;box-shadow:var(--shadow-lg)}
+.q-lesson{display:inline-block;font-size:.76rem;font-weight:900;color:#fff;padding:4px 14px;border-radius:99px;margin-bottom:12px}
+.q-text{font-size:1.12rem;font-weight:800;line-height:2.2;margin-bottom:18px}
+.opts{display:grid;gap:11px}
+.opt{border:2px solid var(--border);background:var(--bg);border-radius:16px;padding:13px 17px;font-size:.94rem;font-weight:600;
+  font-family:inherit;cursor:pointer;text-align:right;color:var(--ink);transition:.25s;display:flex;gap:11px;align-items:center}
+.opt .o-letter{flex:none;width:32px;height:32px;border-radius:10px;display:grid;place-items:center;font-weight:900;font-size:.85rem;
+  background:var(--bg2);border:1.5px solid var(--border);transition:.25s}
+.opt:hover{border-color:var(--primary);transform:translateX(-5px);box-shadow:0 8px 20px rgba(91,94,240,.18)}
+.opt.sel{border-color:var(--primary);background:color-mix(in srgb,var(--primary) 10%,transparent);font-weight:800}
+.opt.sel .o-letter{background:linear-gradient(135deg,var(--primary),var(--primary2));color:#fff;border-color:transparent}
+.opt.correct{border-color:var(--green);background:color-mix(in srgb,var(--green) 12%,transparent)}
+.opt.correct .o-letter{background:var(--green);color:#fff;border-color:transparent}
+.opt.wrong{border-color:var(--red);background:color-mix(in srgb,var(--red) 10%,transparent)}
+.opt.wrong .o-letter{background:var(--red);color:#fff;border-color:transparent}
+.opt.locked{pointer-events:none}
+.q-nav{display:flex;gap:12px;margin-top:20px;flex-wrap:wrap}
+.q-btn{border:none;font-family:inherit;font-weight:800;border-radius:14px;padding:12px 26px;font-size:.92rem;cursor:pointer;transition:.3s}
+.q-btn.ghost{background:var(--bg2);color:var(--ink);border:1.5px solid var(--border)}
+.q-btn.ghost:hover{transform:translateY(-3px)}
+.q-btn.primary{background:linear-gradient(135deg,var(--primary),var(--primary2));color:#fff;box-shadow:0 10px 24px rgba(91,94,240,.4)}
+.q-btn.primary:hover{transform:translateY(-3px) scale(1.03)}
+.q-btn.finish{background:linear-gradient(135deg,var(--green),#34d399);color:#fff;box-shadow:0 10px 24px rgba(16,185,129,.4)}
+.q-btn.finish:hover{transform:translateY(-3px) scale(1.03)}
+.q-nav .spacer{flex:1}
+/* navigator */
+.navgrid-panel{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:18px;margin-top:18px;box-shadow:var(--shadow)}
+.navgrid-panel h5{font-size:.88rem;font-weight:900;color:var(--muted);margin-bottom:12px;display:flex;gap:8px;align-items:center}
+.navgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(44px,1fr));gap:8px}
+.ng{aspect-ratio:1;border-radius:12px;border:1.5px solid var(--border);background:var(--bg);font-family:inherit;font-weight:800;
+  font-size:.82rem;cursor:pointer;color:var(--muted);transition:.25s;display:grid;place-items:center}
+.ng:hover{transform:scale(1.12);border-color:var(--primary)}
+.ng.answered{background:linear-gradient(135deg,var(--primary),var(--primary2));color:#fff;border-color:transparent}
+.ng.current{outline:3px solid var(--orange);outline-offset:2px;font-size:.95rem}
+.ng.ok{background:var(--green);color:#fff;border-color:transparent}
+.ng.bad{background:var(--red);color:#fff;border-color:transparent}
+/* results */
+.res-hero{background:linear-gradient(135deg,#312e81,#9333ea);color:#fff;border-radius:26px;padding:38px 26px;text-align:center;
+  box-shadow:var(--shadow-lg);position:relative;overflow:hidden;margin-bottom:22px}
+.res-hero::before{content:"";position:absolute;inset:0;background:radial-gradient(rgba(255,255,255,.13) 1.5px,transparent 1.5px);background-size:26px 26px;animation:drift 20s linear infinite}
+.res-hero>*{position:relative}
+.ring-wrap{width:170px;height:170px;margin:10px auto 6px;position:relative}
+.ring-wrap svg{transform:rotate(-90deg)}
+.ring-bg{fill:none;stroke:rgba(255,255,255,.18);stroke-width:13}
+.ring-val{fill:none;stroke:url(#ringGrad);stroke-width:13;stroke-linecap:round;stroke-dasharray:465;stroke-dashoffset:465;
+  transition:stroke-dashoffset 1.6s cubic-bezier(.3,.8,.3,1)}
+.ring-num{position:absolute;inset:0;display:grid;place-items:center;font-weight:900}
+.ring-num b{font-size:2.1rem;line-height:1.2}
+.ring-num span{font-size:.78rem;opacity:.85;display:block}
+.res-msg{font-size:1.25rem;font-weight:900;margin-top:8px}
+.res-sub{font-size:.9rem;opacity:.92}
+.per-lesson{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:20px 0}
+.pl-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:14px;text-align:center;box-shadow:var(--shadow);transition:.3s}
+.pl-card:hover{transform:translateY(-4px)}
+.pl-card b{display:block;font-size:1.25rem;font-weight:900;color:var(--primary)}
+.pl-card span{font-size:.8rem;color:var(--muted)}
+.pl-bar{height:7px;border-radius:99px;background:var(--bg2);margin-top:9px;overflow:hidden}
+.pl-bar i{display:block;height:100%;border-radius:99px;transition:width 1.2s ease .4s}
+.review-item{background:var(--card);border:1.5px solid var(--border);border-radius:18px;padding:18px 20px;margin:14px 0;box-shadow:var(--shadow)}
+.review-item.good{border-color:var(--green)}
+.review-item.bad{border-color:var(--red)}
+.review-item .rv-q{font-weight:800;font-size:.94rem;display:flex;gap:9px;align-items:flex-start}
+.review-item .rv-q .mark{flex:none;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:.8rem;font-weight:900}
+.review-item.good .mark{background:var(--green)}
+.review-item.bad .mark{background:var(--red)}
+.rv-ans{font-size:.85rem;margin-top:10px;padding:8px 14px;border-radius:12px;font-weight:700}
+.rv-ans.y{background:color-mix(in srgb,var(--red) 10%,transparent);color:var(--red)}
+.rv-ans.c{background:color-mix(in srgb,var(--green) 12%,transparent);color:color-mix(in srgb,var(--green) 75%,var(--ink))}
+.rv-exp{margin-top:10px;font-size:.84rem;background:var(--bg2);border-radius:12px;padding:10px 14px;color:var(--muted);border-right:3px solid var(--blue)}
+.res-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:24px}
+#confetti{position:fixed;inset:0;pointer-events:none;z-index:9998}
+/* back to top */
+#backTop{position:fixed;bottom:24px;left:24px;width:52px;height:52px;border-radius:16px;border:none;cursor:pointer;z-index:950;
+  background:linear-gradient(135deg,var(--primary),var(--pink));color:#fff;font-size:1.2rem;box-shadow:0 12px 30px rgba(91,94,240,.45);
+  opacity:0;transform:translateY(18px) scale(.8);transition:.4s;pointer-events:none}
+#backTop.show{opacity:1;transform:none;pointer-events:auto}
+#backTop:hover{transform:translateY(-5px) scale(1.08)}
+/* footer */
+footer{background:linear-gradient(135deg,#1e1b4b,#4c1d95);color:#e9d5ff;text-align:center;padding:44px 20px;margin-top:70px}
+footer .f-logo{font-size:2rem;animation:floaty 5s ease-in-out infinite}
+footer h4{font-weight:900;font-size:1.1rem;margin:8px 0}
+footer p{font-size:.84rem;opacity:.85;max-width:560px;margin:6px auto}
+/* tooltip روی موبایل: به‌جای شناور کنار کلمه، به‌صورت بنر پایین صفحه می‌آید تا از صفحه بیرون نزند */
+@media(max-width:900px){
+  .tip::after{max-width:min(270px,60vw)}
+}
+@media(max-width:640px){
+  .vs-wrap{grid-template-columns:1fr}
+  .vs-badge{display:none}
+  .bud-wrap{grid-template-columns:1fr}
+  .pow-lines{display:none}
+  .card,.q-card{padding:20px 17px}
+  .nav-links{display:none}
+  /* --- ناوبار موبایل: همه‌چیز در یک ردیف فشرده --- */
+  .nav-inner{padding:8px 10px;gap:8px;flex-wrap:nowrap}
+  .brand{font-size:.88rem;gap:7px;min-width:0}
+  .brand .logo{width:34px;height:34px;border-radius:11px;font-size:1rem}
+  #studyPill{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:.68rem;padding:4px 9px;text-align:center}
+  #themeBtn{width:36px;height:36px;flex:none}
+  /* --- فاصله‌ها و اندازه‌ها --- */
+  main{padding:36px 14px 32px}
+  section{scroll-margin-top:118px}
+  .section-head{margin:44px 0 26px}
+  .section-head .desc{font-size:.88rem}
+  .cover{min-height:auto;padding:56px 18px 64px}
+  .cover-cta .btn{padding:12px 22px;font-size:.9rem}
+  .cstat{min-width:0;padding:10px 14px;flex:1 1 40%}
+  .scroll-hint{margin-top:30px}
+  /* --- متن‌ها --- */
+  body{line-height:2}
+  .book-hl{padding:18px 15px}
+  .book-hl .hl-text{font-size:.97rem}
+  .book-hl .why{font-size:.85rem}
+  .card h3{font-size:1.03rem}
+  .def-box{padding:14px 16px;font-size:.94rem}
+  .quran-box{padding:24px 14px}
+  .quran-box .q-ar{font-size:1.22rem}
+  .quran-box::before,.quran-box::after{font-size:4.2rem}
+  .hadith-box{padding:20px 16px}
+  .hadith-box .h-text{font-size:.97rem}
+  .story{padding:20px 16px}
+  .chip{font-size:.8rem;padding:7px 13px}
+  .term-row{grid-template-columns:1fr}
+  .bud-eq{font-size:1.12rem;padding:0 6px}
+  .ministry{font-size:.8rem;padding:10px 12px}
+  .step .s-num{width:44px;height:44px;font-size:1.02rem}
+  .step:not(:last-child)::before{top:56px;right:22px}
+  .sum-box{padding:18px 15px}
+  .sum-box li{font-size:.86rem}
+  .gold-box{padding:18px 15px}
+  .done-bar{margin:26px 0 6px}
+  .done-btn{width:100%;max-width:340px}
+  .toc{grid-template-columns:1fr}
+  .pow-top{font-size:.98rem}
+  .pow p{font-size:.8rem}
+  /* --- امتحان --- */
+  .q-intro{padding:28px 16px}
+  .q-intro h3{font-size:1.3rem}
+  .q-text{font-size:1rem;line-height:2}
+  .opt{font-size:.88rem;padding:11px 13px}
+  .q-topbar{padding:10px 12px;gap:8px}
+  .q-count{font-size:.8rem}
+  .q-timer{font-size:.82rem;padding:5px 11px}
+  .q-btn{padding:11px 18px;font-size:.86rem}
+  .res-hero{padding:28px 16px}
+  .ring-wrap{width:150px;height:150px}
+  .ring-wrap svg{width:150px;height:150px}
+  /* --- tooltip موبایل: بنر پایین صفحه --- */
+  .tip::after{position:fixed;bottom:16px;top:auto;right:50%;left:auto;
+    transform:translateX(50%) scale(1);width:min(88vw,340px);max-width:none;
+    opacity:0;pointer-events:none;z-index:9997;font-size:.8rem;line-height:1.9}
+  .tip:hover::after,.tip:active::after,.tip:focus::after{opacity:1}
+  .tip{outline:none}
+  #backTop{bottom:16px;left:16px;width:46px;height:46px}
+  footer{padding:34px 16px}
+}
+</style>
+</head>
+<body>
+<div id="progressBar"></div>
+
+<!-- ============ NAVBAR ============ -->
+<nav>
+  <div class="nav-inner">
+    <div class="brand"><span class="logo">📚</span><span>جزوه مطالعات هشتم</span></div>
+    <span id="studyPill">📖 پیشرفت مطالعه: ۰٪</span>
+    <div class="nav-links">
+      <a href="#toc">فهرست</a>
+      <a href="#l1">درس ۱</a>
+      <a href="#l2">درس ۲</a>
+      <a href="#l3">درس ۳</a>
+      <a href="#l4">درس ۴</a>
+      <a href="#gold">نکات طلایی</a>
+      <a href="#quiz">📝 امتحان</a>
+    </div>
+    <button id="themeBtn" title="تغییر تم شب/روز">🌙</button>
+  </div>
+</nav>
+
+<!-- ============ COVER ============ -->
+<header class="cover" id="top">
+  <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+  <span class="floaty" style="top:16%;right:12%">✏️</span>
+  <span class="floaty" style="top:24%;left:14%;animation-delay:-2s">📖</span>
+  <span class="floaty" style="bottom:20%;right:20%;animation-delay:-4s">💡</span>
+  <span class="floaty" style="bottom:28%;left:9%;animation-delay:-1s">🤝</span>
+  <span class="floaty" style="top:9%;left:40%;animation-delay:-3s">🏛️</span>
+  <span class="cover-badge"><span class="dot"></span> جزوه الکترونیکی • مطالعات اجتماعی پایه هشتم</span>
+  <h1>جزوه جامع <span class="grad">تعاون و دولت</span><br>درس‌های ۱ تا ۴</h1>
+  <p class="sub">توضیح کامل و ساده‌ی همه مفاهیم، به‌خصوص متن‌های هایلایت‌شده‌ی کتاب 🖍️ همراه با جدول‌ها، دیاگرام‌ها، نکات طلایی و یک <b>امتحان تعاملی ۳۰ سؤالی</b> در پایان جزوه 🎯</p>
+  <div class="cover-stats">
+    <div class="cstat"><b>۴</b><span>درس کامل</span></div>
+    <div class="cstat"><b>۳۰</b><span>سؤال امتحان</span></div>
+    <div class="cstat"><b>۱۹</b><span>وزارت‌خانه</span></div>
+    <div class="cstat"><b>۱۰۰٪</b><span>تعاملی و انیمیشن‌دار</span></div>
+  </div>
+  <div class="cover-cta">
+    <a href="#toc" class="btn btn-white">🚀 شروع مطالعه</a>
+    <a href="#quiz" class="btn btn-glass">📝 رفتن به امتحان</a>
+  </div>
+  <div class="scroll-hint">به پایین اسکرول کن<div class="mouse"></div></div>
+</header>
+
+<main>
+<!-- ============ TOC ============ -->
+<section id="toc">
+  <div class="section-head reveal">
+    <span class="emoji-chip">🗺️</span>
+    <h2>فهرست جزوه</h2>
+    <div class="bar"></div>
+    <p class="desc">روی هر بخش کلیک کن تا مستقیم به آن بروی. توصیه می‌شود به ترتیب بخوانی و در پایان امتحان بدهی!</p>
+  </div>
+  <div class="toc">
+    <a class="toc-item reveal" href="#l1" style="--tc:#5b5ef0">
+      <span class="t-emoji">🤝</span><span><b>درس ۱: تعاون (۱)</b><span>تعریف، ماجراها، آیات و حدیث، سطوح تعاون</span></span><span class="go">←</span>
+    </a>
+    <a class="toc-item reveal" href="#l2" style="--tc:#0ea5a4">
+      <span class="t-emoji">🎁</span><span><b>درس ۲: تعاون (۲)</b><span>انفاق، مؤسسات خیریه، وقف، شرکت تعاونی</span></span><span class="go">←</span>
+    </a>
+    <a class="toc-item reveal" href="#l3" style="--tc:#ec4899">
+      <span class="t-emoji">🏛️</span><span><b>درس ۳: ساختار و تشکیلات دولت</b><span>سه قوه، رئیس‌جمهور، کابینه، وزارت‌خانه‌ها</span></span><span class="go">←</span>
+    </a>
+    <a class="toc-item reveal" href="#l4" style="--tc:#f59e0b">
+      <span class="t-emoji">⚖️</span><span><b>درس ۴: وظایف دولت</b><span>شهروندان، حقوق و تکالیف، درآمد و هزینه، بودجه</span></span><span class="go">←</span>
+    </a>
+    <a class="toc-item reveal" href="#gold" style="--tc:#10b981">
+      <span class="t-emoji">🌟</span><span><b>نکات طلایی</b><span>جمع‌بندی مهم‌ترین نکات برای امتحان</span></span><span class="go">←</span>
+    </a>
+    <a class="toc-item reveal" href="#quiz" style="--tc:#8b5cf6">
+      <span class="t-emoji">📝</span><span><b>امتحان ۳۰ سؤالی</b><span>آزمون تعاملی با تصحیح خودکار و نمره</span></span><span class="go">←</span>
+    </a>
+  </div>
+</section>
+
+<!-- ============ LESSON 1 ============ -->
+<section id="l1">
+  <div class="section-head reveal">
+    <span class="emoji-chip" style="background:linear-gradient(135deg,#e0e7ff,#c7d2fe)">🤝</span>
+    <h2>درس ۱: تعاون (۱)</h2>
+    <div class="bar"></div>
+    <p class="desc">در این درس یاد می‌گیریم تعاون چیست، چرا انسان‌ها باید به هم کمک کنند و تعاون در خانه، مدرسه و محله چه شکلی دارد.</p>
+  </div>
+
+  <div class="card reveal">
+    <span class="c-icon">🧩</span>
+    <h3>تعریف تعاون چیست؟</h3>
+    <div class="def-box">
+      <div class="d-title">📌 تعریف</div>
+      <b>«تعاون» به زمانی گفته می‌شود که چند نفر برای رسیدن به یک هدف، همکاری و کمک کنند.</b>
+    </div>
+    <p>وقتی چند نفر با هم یک کار را انجام می‌دهند، هم آن کار <b>سریع‌تر</b> انجام می‌شود، هم <b>بهتر و با کیفیت‌تر</b> پیش می‌رود و هم به همه‌ی اعضا احساس <b>صمیمیت، آرامش و رضایت</b> دست می‌دهد. به همین دلیل است که در زبان دینی ما همیشه به همکاری و یاری رساندن یکدیگر سفارش شده است.</p>
+    <div class="book-hl">
+      <div class="hl-text"><mark>شایسته است افراد یک محله نیز با هم همکاری و همدلی داشته باشند. همدلی و همکاری بین افرادی که در یک محله زندگی می‌کنند، علاوه بر ایجاد صمیمیت و همبستگی، موجب می‌شود که کارها بهتر پیش برود.</mark></div>
+      <div class="why"><b>توضیح:</b> این جمله از کتاب یعنی تعاون فقط مال یک نفر یا یک خانواده نیست؛ اهالی هر محله هم باید مثل یک خانواده بزرگ، به هم کمک کنند. نتیجه‌اش چیست؟ صمیمیت، همبستگی و انجام بهتر کارها. 🏘️</div>
+    </div>
+  </div>
+
+  <div class="section-head reveal" style="margin-top:48px">
+    <h3 style="font-size:1.3rem;font-weight:900">📖 داستان‌های درس (ماجرای ۱ و ۲)</h3>
+    <div class="bar"></div>
+  </div>
+
+  <div class="grid2">
+    <div class="story reveal">
+      <span class="s-tag" style="background:var(--primary)">ماجرای ۱</span>
+      <div class="s-title">🚑 کمک به احمدآقا</div>
+      <p>احمدآقا در یک تصادف، <b>یک دست و یک پایش گچ گرفته شد</b> و به گفته‌ی پزشک درمانش سه ماه طول می‌کشید. او نمی‌توانست سر کار برود، نان بگیرد، امیرعلی، پسر کوچکش را به مدرسه برساند و از نوزاد تازه‌متولدش مراقبت کند. فریده‌خانم، خواهر احمدآقا به برادرها تلفن زد و درخواست کمک کرد؛ آن‌ها دور هم جمع شدند، گفت‌وگو کردند و <b>کارها را بین خودشان تقسیم کردند</b>: یکی مسئول بردن احمدآقا به درمانگاه، یکی بردن امیرعلی به مدرسه، دیگری مسئول خرید خانه و خواهرش هم موظف شد برای مراقبت از نوزاد و کارهای خانه به همسر احمدآقا کمک کند.</p>
+      <div class="s-moral">💡 پیام: با همدلی و تقسیم کار، روزهای سخت برای خانواده‌ی احمدآقا قابل تحمل شد.</div>
+    </div>
+    <div class="story reveal">
+      <span class="s-tag" style="background:var(--teal)">ماجرای ۲</span>
+      <div class="s-title">♻️ شهرکی بدون زباله با همکاری مردم</div>
+      <p>در شهرکی دورافتاده که تازه شکل گرفته بود و خدمات عمومی مناسبی نداشت، <b>زباله‌ها در زمین‌ها انباشته می‌شد</b> و بوی بد و آلودگی، ساکنان را آزار می‌داد. روزی «جلال»، یکی از نوجوانان شهرک، با دوستانش گفت: «ما باید با همفکری و همکاری، چاره‌ای برای این مشکل پیدا کنیم.» آن‌ها پول‌هایشان را روی هم گذاشتند و <b>کیسه‌های پلاستیکی خریدند</b> و ساکنان را قانع کردند زباله‌ها را تفکیک کنند. سپس زباله‌های قابل بازیافت را می‌فروختند و با درآمدش، کیسه‌ی زباله می‌خریدند و <b>رایگان به خانواده‌ها می‌دادند</b>؛ به این ترتیب مشکل آلودگی تا حد زیادی حل شد!</p>
+      <div class="s-moral">💡 پیام: با همفکری و همکاری، حتی مشکل بزرگ محیط زندگی هم حل می‌شود.</div>
+    </div>
+  </div>
+
+  <div class="book-hl reveal" style="margin-top:34px">
+    <div class="hl-text"><mark>سال پیش، آموختید که همه‌ی ما انسان‌ها در مقابل خداوند متعال، نسبت به خود، دیگران و محیطی که در آن زندگی می‌کنیم، مسئول هستیم.</mark></div>
+    <div class="why"><b>توضیح:</b> یعنی مسئولیت‌پذیری از روزهای اول زندگی بشر با او بوده است؛ هم نسبت به خودمان، هم نسبت به دیگران و هم نسبت به محیط زیست و محله‌مان. 🌍</div>
+  </div>
+
+  <div class="book-hl reveal">
+    <div class="hl-text"><mark>از آن‌جایی که انسان هم موجودی اجتماعی و هم مسئول، آفریده شده است؛ هیچ‌کس نمی‌تواند اعمال و رفتار و زندگی خود را از اجتماع جدا کند و بگوید: من می‌خواهم زندگی آسوده‌ای داشته باشم، نسبت به آنچه در جامعه می‌گذرد و اتفاقاتی که برای دیگران می‌افتد، بی‌تفاوت بمانم و زندگی خود را از دیگران جدا کنم.</mark></div>
+    <div class="why"><b>توضیح ساده:</b> انسان مثل یک حلقه‌ی زنجیر است! ما به دیگران نیاز داریم (نانوا برای نان، معلم برای درس، پزشک برای سلامتی) و اتفاق‌های دیگران هم به ما ربط دارد. پس نمی‌توانیم بی‌تفاوت باشیم. 🔗</div>
+  </div>
+
+  <div class="quran-box reveal">
+    <div class="q-ar">﴿وَتَعاوَنوا عَلَی الْبِرِّ وَالتَّقوی وَلا تَعاوَنوا عَلَی الْاِثْمِ وَالْعُدْوانِ﴾</div>
+    <div class="q-fa">«در کارهای نیک و پرهیزکاری، یکدیگر را یاری کنید؛ و در گناه و ستمکاری همکاری نکنید.»</div>
+    <div class="q-src">📖 سوره‌ی مائده، آیه‌ی ۲</div>
+  </div>
+
+  <div class="card reveal">
+    <span class="c-icon">🕌</span>
+    <h3>اسلام و تعاون</h3>
+    <p>آیه‌ی بالا از مهم‌ترین دستورهای قرآن درباره‌ی تعاون است: <b>در کارهای خوب به هم کمک کنیم</b> ولی <b>در کارهای بد (گناه و ستمکاری) هیچ‌وقت با هم همکاری نکنیم</b>. در حدیث نیز آمده که کسی که یک مشکل از مؤمنی را رفع کند، مانند کسی است که تمام عمرش را به عبادت سپری کرده است؛ یعنی ارزش انسان به میزان خدمتش به دیگران است.</p>
+  </div>
+
+  <div class="hadith-box reveal">
+    <span class="h-icon">🗨️ امیرالمؤمنین علی (ع)</span>
+    <div class="h-text">از پیامبر اکرم (ص) شنیدم که فرمودند: <b>«کسی که یک مشکل از مؤمنی رفع کند، مانند کسی است که تمام عمرش را به عبادت سپری کرده است.»</b></div>
+    <div class="h-src">📚 منبع: وسائل‌الشیعه، جلد ۱۱</div>
+  </div>
+
+  <div class="card reveal">
+    <span class="c-icon">🚫</span>
+    <h3>«همکاری نکردن در گناه» یعنی چه؟</h3>
+    <p>چون قرآن می‌گوید در گناه همکاری نکنیم، باید بدانیم این یعنی چه. کتاب می‌گوید «همکاری نکردن در گناه» دو شکل دارد:</p>
+    <div class="grid2" style="margin-top:14px">
+      <div class="card" style="box-shadow:none;border:1.5px dashed var(--border)"><b>۱. تشویق نکنیم</b><p class="muted" style="font-size:.85rem">اگر کسی کار ناپسند یا گناهی انجام می‌دهد، او را تشویق نکنیم یا طوری رفتار نکنیم که انگار با او موافق هستیم.</p></div>
+      <div class="card" style="box-shadow:none;border:1.5px dashed var(--border)"><b>۲. مقدمه را فراهم نکنیم</b><p class="muted" style="font-size:.85rem">گاهی همکاری نکردن در گناه یعنی مقدمه‌ی انجام آن گناه را برای خود یا دیگران فراهم نکنیم.</p></div>
+    </div>
+  </div>
+
+  <div class="card reveal">
+    <span class="c-icon">🌈</span>
+    <h3>جلوه‌های تعاون (تعاون چه شکل‌هایی دارد؟)</h3>
+    <p>تعاون فقط کمک پولی نیست! همه‌ی کارهای زیر جلوه‌ای از تعاون‌اند:</p>
+    <div class="chips">
+      <span class="chip">💚 اظهار دوستی و محبت</span>
+      <span class="chip">🤗 همدلی و خوشحال کردن یکدیگر</span>
+      <span class="chip">🎁 هدیه دادن</span>
+      <span class="chip">🕊️ کوشش برای ایجاد صلح و آشتی</span>
+      <span class="chip">🏥 عیادت از بیمار</span>
+      <span class="chip">🤲 قرض دادن</span>
+      <span class="chip">🛠️ رفع مشکلات مردم و یاری‌رساندن در گرفتاری‌ها</span>
+      <span class="chip">💰 مشارکت برای رفع نیازهای مالی فقرا</span>
+      <span class="chip">✅ امر به معروف</span>
+      <span class="chip">❌ نهی از منکر</span>
+    </div>
+  </div>
+
+  <div class="card reveal">
+    <span class="c-icon">🎯</span>
+    <h3>سطوح تعاون — تعاون کجا اتفاق می‌افتد؟</h3>
+    <p>ماجرای ۱ و ۲ جلوه‌ای از تعاون در کارهای نیک بودند. تعاون ممکن است در این سطح‌ها صورت بگیرد:</p>
+    <div class="grid4" style="margin-top:14px">
+      <div class="level"><span class="l-emoji">🏠</span><b>خانواده و خویشاوندان</b><p>مثل تقسیم کارهای خانه و کمک به فامیل</p></div>
+      <div class="level"><span class="l-emoji">🏫</span><b>مدرسه</b><p>حفظ امکانات، کمک به همکلاسی، ایجاد نشاط</p></div>
+      <div class="level"><span class="l-emoji">🏘️</span><b>محله</b><p>کمک به همسایه‌ها و نظافت محله</p></div>
+      <div class="level"><span class="l-emoji">🌆</span><b>شهر، روستا و جامعه</b><p>مشارکت شهروندی و کمک به مردم</p></div>
+    </div>
+  </div>
+
+  <div class="card reveal">
+    <span class="c-icon">🏠➡️</span>
+    <h3>تعاون در محله (حق همسایه)</h3>
+    <p>در دین اسلام به محبت و توجه به همسایه سفارش بسیار شده است. نمونه‌هایی از تعاون در محله:</p>
+    <ul class="check-list">
+      <li><span class="ck">✓</span> عیادت از همسایه‌ی بیمار</li>
+      <li><span class="ck">✓</span> کمک و خوش‌آمدگویی به همسایه‌ی جدیدی که تازه به محله آمده است</li>
+      <li><span class="ck">✓</span> همکاری در نظافت و پاکیزگی محله</li>
+      <li><span class="ck">✓</span> مراقبت از اموال عمومی محله</li>
+      <li><span class="ck">✓</span> همکاری در جشن‌ها و مراسم‌های محله</li>
+    </ul>
+    <div class="hadith-box" style="margin:18px 0 0">
+      <span class="h-icon">🗨️ امام صادق (ع)</span>
+      <div class="h-text">«با همسایه‌ات <u>خوش‌رفتاری</u> کن تا مسلمان راستین باشی.»</div>
+      <div class="h-src">📚 منبع: بحارالانوار، جلد ۷۴</div>
+    </div>
+    <details class="acc" style="margin-top:14px">
+      <summary>💡 بیشتر بدانیم: صندوق قرض‌الحسنه خانوادگی (کلیک کن!)</summary>
+      <div class="acc-body">
+        گاهی خویشاوندان برای رفع نیازهای مالی، «صندوق قرض‌الحسنه خانوادگی» درست می‌کنند؛ این صندوق مانند یک بانک کوچک است. اعضای داوطلب از بین خود فرد یا افرادی را برای اداره‌ی صندوق انتخاب می‌کنند و هر عضو باید ماهانه مبلغی معین بپردازد. سپس سقف وام را تعیین می‌کنند و هر ماه از ذخیره‌ی صندوق، به نوبت به یک یا دو نفر از اعضای نیازمند، وام (قرض) داده می‌شود. وام‌گیرنده موظف است پول قرض‌گرفته را در مدت معینی به‌صورت اقساط به صندوق برگرداند. 💰
+      </div>
+    </details>
+  </div>
+
+  <div class="sum-box reveal">
+    <h4>⚡ خلاصه‌ی درس ۱ در یک نگاه</h4>
+    <ul>
+      <li>تعاون = همکاری و کمک چند نفر برای رسیدن به یک هدف.</li>
+      <li>انسان موجودی <b>اجتماعی</b> و <b>مسئول</b> است و نمی‌تواند زندگی‌اش را از اجتماع جدا کند.</li>
+      <li>قرآن: در کارهای نیک و پرهیزکاری همدیگر را یاری کنید، نه در گناه و ستمکاری (مائده ۲).</li>
+      <li>همکاری نکردن در گناه = تشویق نکردن + فراهم نکردن مقدمه‌ی گناه.</li>
+      <li>سطوح تعاون: خانواده ← مدرسه ← محله ← شهر و جامعه.</li>
+      <li>با همسایه خوش‌رفتاری کن تا مسلمان راستین باشی (امام صادق ع).</li>
+    </ul>
+  </div>
+
+  <div class="done-bar reveal"><button class="done-btn" data-lesson="l1">✓ این درس را خواندم</button></div>
+</section>
+<!-- ============ LESSON 2 ============ -->
+<section id="l2">
+  <div class="section-head reveal">
+    <span class="emoji-chip" style="background:linear-gradient(135deg,#ccfbf1,#99f6e4)">🎁</span>
+    <h2>درس ۲: تعاون (۲)</h2>
+    <div class="bar"></div>
+    <p class="desc">در این درس می‌بینیم تعاون از خانه و محله فراتر می‌رود: انفاق، مؤسسات خیریه، وقف و شرکت‌های تعاونی!</p>
+  </div>
+
+  <div class="book-hl reveal">
+    <div class="hl-text"><mark>تعاون تنها به خانه، مدرسه و محله محدود نمی‌شود. گاهی افراد نیکوکار در سطح جامعه به صورت فردی و گاهی به صورت گروهی به دیگران یاری می‌رسانند و کمک می‌کنند.</mark></div>
+    <div class="why"><b>توضیح:</b> در درس قبل تعاون را در خانه و محله دیدیم؛ حالا بزرگ‌تر می‌شویم! نیکوکاران یا <b>به‌صورت فردی</b> (مثلاً یک نفر خودش به نیازمند کمک می‌کند) یا <b>به‌صورت گروهی و در قالب سازمان</b> (مثل خیریه‌ها) به مردم کمک می‌کنند. 🌟</div>
+  </div>
+
+  <div class="section-head reveal" style="margin-top:44px">
+    <h3 style="font-size:1.3rem;font-weight:900">🧑‍🎓 نمونه‌هایی از افراد نیکوکار (مثال‌های کتاب)</h3>
+    <div class="bar"></div>
+  </div>
+  <div class="grid2">
+    <div class="story reveal">
+      <span class="s-tag" style="background:var(--pink)">نیکی</span>
+      <div class="s-title">🎓 دانشجوی داوطلب</div>
+      <p>نیکی دانشجوی سال دوم دانشگاه است. با مسئولان <b>پرورشگاه کودکان بی‌سرپرست</b> گفت‌وگو کرده و با هماهنگی آن‌ها، هفته‌ای چند ساعت به پرورشگاه می‌رود و در <b>مراقبت از کودکان</b> و انجام فعالیت‌های گروهی و مسابقات ورزشی کمک می‌کند.</p>
+    </div>
+    <div class="story reveal">
+      <span class="s-tag" style="background:var(--blue)">خانم احسان</span>
+      <div class="s-title">👕 کارگاه تولیدی لباس</div>
+      <p>خانم احسان و همسرش یک <b>کارگاه تولیدی لباس</b> دارند. آن‌ها هر چند ماه یک‌بار تعدادی از لباس‌هایی را که می‌دوزند، <b>به نیازمندان هدیه می‌دهند</b> و بخشی از درآمد خود را هم برای افراد بی‌بضاعت رفاه می‌کنند.</p>
+    </div>
+    <div class="story reveal">
+      <span class="s-tag" style="background:var(--orange)">آقای صدیق</span>
+      <div class="s-title">🧑‍🦳 همراه معلولان</div>
+      <p>آقای صدیق مرد چهل‌ساله‌ای و <b>مهندس</b> است. او ماهی یک‌بار به <b>آسایشگاه معلولان</b> می‌رود و در نگهداری از افراد معلول به مددکاران آن آسایشگاه کمک می‌کند.</p>
+    </div>
+    <div class="story reveal">
+      <span class="s-tag" style="background:var(--green)">پروانه</span>
+      <div class="s-title">🎨 معلمِ روستاها</div>
+      <p>پروانه معلم است. در ایام تابستان که مدارس تعطیل است، هفته‌ای دو روز به <b>روستای نزدیک محل زندگی‌شان</b> می‌رود و برای بچه‌ها کلاس تشکیل می‌دهد؛ هم به کودکانی که مشکل و ضعف درسی دارند آموزش می‌دهد و هم به آن‌ها <b>کارهای هنری یاد می‌دهد</b>.</p>
+    </div>
+  </div>
+
+  <div class="card reveal" style="margin-top:30px">
+    <span class="c-icon">💝</span>
+    <h3>انفاق چیست؟</h3>
+    <div class="def-box">
+      <div class="d-title">📌 تعریف</div>
+      <b>افراد از طریق بخشش مال، علم، توانایی‌ها و وقت خود به نیازمندان یاری می‌رسانند؛ به این بخشش «انفاق» می‌گویند.</b>
+    </div>
+    <div class="book-hl" style="margin:14px 0 6px">
+      <div class="hl-text"><mark>به این بخشش «انفاق» می‌گویند. در قرآن کریم به انفاق، تأکید زیادی شده است و آیات فراوانی ما را به انفاق در راه خدا فرامی‌خوانند.</mark></div>
+      <div class="why"><b>توضیح:</b> قرآن این‌قدر انفاق را دوست دارد که بارها در آیه‌های مختلف ما را به آن دعوت می‌کند. انفاق هم مشکل نیازمند را حل می‌کند و هم به خودِ انفاق‌کننده آرامش و پاداش خدا می‌دهد. 💫</div>
+    </div>
+    <p class="muted" style="font-size:.9rem">راه‌های انفاق فقط پول نیست: غذا، لباس، کتاب، لوازم‌التحریر، کمک به بیمارستان‌ها و... همه انفاق‌اند.</p>
+  </div>
+
+  <div class="quran-box reveal">
+    <div class="q-ar">﴿لَنْ تَنَالُوا الْبِرَّ حَتَّى تُنْفِقُوا مِمَّا تُحِبُّونَ﴾</div>
+    <div class="q-fa">«هرگز به نیکی و شایستگی نمی‌رسید، مگر اینکه از آنچه دوست دارید انفاق کنید.»</div>
+    <div class="q-src">📖 سوره‌ی آل عمران، آیه‌ی ۹۲</div>
+  </div>
+
+  <div class="section-head reveal" style="margin-top:44px">
+    <h3 style="font-size:1.3rem;font-weight:900">🏢 گاهی نیکوکاران در قالب سازمان‌ها کمک می‌کنند</h3>
+    <div class="bar"></div>
+  </div>
+
+  <div class="card reveal">
+    <span class="c-icon">🤲</span>
+    <h3>مؤسسات نیکوکاری معروف</h3>
+    <div class="grid2" style="margin-top:12px">
+      <div class="card" style="box-shadow:none;border:1.5px dashed var(--border)">
+        <b>🤲 کمیته‌ی امداد امام خمینی (ره)</b>
+        <p class="muted" style="font-size:.86rem">کمک به خانواده‌های نیازمند و بی‌سرپرست در سراسر کشور؛ با شعار «کمک به نیازمندان».</p>
+      </div>
+      <div class="card" style="box-shadow:none;border:1.5px dashed var(--border)">
+        <b>🎗️ مؤسسه‌ی خیریه‌ی محک</b>
+        <p class="muted" style="font-size:.86rem">نمونه‌ی مؤسسات خیریه؛ حمایت از <b>کودکان مبتلا به سرطان</b> و خانواده‌های آن‌ها.</p>
+      </div>
+      <div class="card" style="box-shadow:none;border:1.5px dashed var(--border)">
+        <b>🏥 انواع دیگر</b>
+        <p class="muted" style="font-size:.86rem">انجمن‌های حمایت از بیماران خاص، انجمن‌های نگهداری از معلولان و سالمندان، درمانگاه‌های خیریه، مؤسسات نگهداری و حمایت از ایتام (کودکان بی‌سرپرست) و خیرین مدرسه‌ساز و کتابخانه‌ساز.</p>
+      </div>
+      <div class="card" style="box-shadow:none;border:1.5px dashed var(--border)">
+        <b>🧱 جهاد سازندگی</b>
+        <p class="muted" style="font-size:.86rem">اقدام ارزشمند مردم پس از پیروزی انقلاب اسلامی؛ رفتن داوطلبانه به مناطق محروم و روستاها برای عمران و آبادانی.</p>
+      </div>
+    </div>
+    <div class="book-hl" style="margin:18px 0 0">
+      <div class="hl-text"><mark>البته همه‌ی این سازمان‌ها و مؤسسات باید برای فعالیت‌های خود از وزارت کشور، مجوز بگیرند.</mark></div>
+      <div class="why"><b>نکته‌ی امتحانی!</b> هر خیریه‌ای که می‌خواهد کار کند، اول باید <b>از وزارت کشور مجوز</b> بگیرد. این جمله خیلی وقت‌ها در آزمون‌ها می‌آید. 📋</div>
+    </div>
+  </div>
+
+  <div class="card reveal">
+    <span class="c-icon">🏫</span>
+    <h3>خیرین مدرسه‌ساز</h3>
+    <div class="book-hl" style="margin:12px 0 14px">
+      <div class="hl-text"><mark>خیرین مدرسه‌ساز با استفاده از توانمندی‌های خود و دیگر افراد یا نهادهای نیکوکار به ساختن یا تعمیر و نوسازی و تجهیز مدارس می‌پردازند و این مدارس را به صورت رایگان در اختیار وزارت آموزش و پرورش قرار می‌دهند.</mark></div>
+      <div class="why"><b>توضیح:</b> خیرین مدرسه‌ساز آدم‌هایی هستند که با پول خودشان <b>مدرسه می‌سازند یا مدرسه‌های قدیمی را تعمیر، نوسازی و تجهیز می‌کنند</b> و آن‌ها را <b>رایگان</b> به وزارت آموزش و پرورش می‌دهند تا بچه‌ها در آن‌ها درس بخوانند. 🏫✨</div>
+    </div>
+    <ul class="check-list">
+      <li><span class="ck">✓</span> خیرین می‌توانند نام خود یا پدر و مادر یا هر نامی را که بخواهند، روی مدرسه بگذارند.</li>
+      <li><span class="ck">✓</span> در یکی‌دو دهه‌ی اخیر، در کشور ما تعداد زیادی از خیرین برای دانش‌آموزان مدرسه ساخته‌اند.</li>
+      <li><span class="ck">✓</span> کاربرگ کتاب: تحقیق درباره‌ی مدرسه‌ای در استان شما که به دست خیرین ساخته شده است.</li>
+    </ul>
+  </div>
+
+  <div class="card reveal">
+    <span class="c-icon">🕌</span>
+    <h3>وقف — نیکوکاری ماندگار</h3>
+    <div class="def-box">
+      <div class="d-title">📌 تعریف وقف</div>
+      <b>وقف، یکی دیگر از اقدامات بسیار مهم به منظور انفاق و تعاون در جامعه است که از روزگاران بسیار قدیم در ایران وجود داشته است.</b>
+    </div>
+    <div class="term-row">
+      <div class="term"><div class="t-word">👤 واقف کیست؟</div><p>کسی که اموال خود را وقف می‌کند «واقف» نامیده می‌شود.</p></div>
+      <div class="term"><div class="t-word">🧾 موقوفات چیست؟</div><p>به اموال و دارایی‌هایی که وقف می‌شود «موقوفات» می‌گویند.</p></div>
+    </div>
+    <div class="book-hl">
+      <div class="hl-text"><mark>به اموال و دارایی‌هایی که وقف می‌شود، موقوفات می‌گویند و کسی حق تصرف در آن‌ها را ندارد؛ یعنی تا ابد باید به همان صورتی که واقف معین نموده است، استفاده شود.</mark></div>
+      <div class="why"><b>نکته‌ی امتحانی!</b> موقوفات مثل اموال عادی نیست: <b>هیچ‌کس حق تصرف (تغییر و برداشتن) در آن‌ها را ندارد</b> و باید <b>تا ابد</b> به همان هدفی که واقف تعیین کرده استفاده شوند. مثلاً اگر زمینی وقف مدرسه شده، آن زمین همیشه باید برای مدرسه بماند. ⏳</div>
+    </div>
+    <p><b>نمونه‌های وقف در قدیم:</b> از دیرباز نیکوکاران بناهایی مانند <b>مدرسه‌ی علمیه، پل، کاروانسرا، آب‌انبار و حمام عمومی</b> می‌ساختند تا مردم بتوانند از آن‌ها استفاده کنند. گاهی نیز دستور می‌دادند از منافع زمین کشاورزی یا کارگاه تولیدی به نیازمندان کمک شود. برخی وقف‌ها آن‌قدر مهم بودند که می‌توانستند جریان‌های فرهنگی، علمی، جغرافیایی یا سیاسیِ یک شهر را تغییر بدهند!</p>
+    <p><b>وقف گروهی یا خانوادگی:</b> در این نوع وقف، چند نفر یا اعضای یک خانواده که هرکدام به‌تنهایی توانایی کافی برای وقف ندارند، <b>با مشارکت مالی یکدیگر</b> وقفی را انجام می‌دهند و همه در پاداش این کار نیک و خوشحال‌نمودن دیگران شریک می‌شوند.</p>
+    <p><b>سازمان اوقاف و امور خیریه:</b> مسئولیت اداره‌ی موقوفات هر منطقه بر عهده‌ی این سازمان است. جالب است بدانید <b>بیش از ۲۵۰ بیمارستان و ۵۲ درمانگاه وقفی</b> در کشور ما وجود دارد!</p>
+  </div>
+
+  <div class="card reveal">
+    <span class="c-icon">🏪</span>
+    <h3>شرکت‌های تعاونی</h3>
+    <p>حتماً تاکنون نام شرکت‌های تعاونی را شنیده‌اید! هرگاه <b>گروهی از مردم برای رفع نیازهای معیشتی و شغلی خود دور هم جمع شوند</b> و با سرمایه‌گذاری و همکاری در کنار هم فعالیت کنند، در واقع یک <b>شرکت تعاونی</b> تأسیس کرده‌اند و هر یک از آن‌ها عضو شرکت تعاونی می‌باشد.</p>
+    <div class="book-hl">
+      <div class="hl-text"><mark>در تعاون، همه افراد با هم برابر هستند؛ یعنی هر کس با هر مقدار سرمایه (سهم) عضو شود، یک حق رأی دارد.</mark></div>
+      <div class="why"><b>نکته‌ی مهم!</b> در شرکت تعاونی، پول بیشتر = رأی بیشتر نیست! هر عضو، با هر مقدار سرمایه، <b>فقط یک حق رأی</b> دارد؛ ولی در شرکت‌های <b>غیرتعاونی</b>، هر کس سهم (سرمایه) بیشتری داشته باشد، قدرت بیشتری در تصمیم‌گیری دارد. 🗳️</div>
+    </div>
+    <ul class="check-list">
+      <li><span class="ck">✓</span> <b>هدف</b> شرکت‌های تعاونی: حل مشکلات اقتصادی و ایجاد رفاه و زندگی بهتر برای اعضا</li>
+      <li><span class="ck">✓</span> <b>منافع</b> حاصل از همکاری و فعالیت گروهی (جمع) به‌طور برابر و یکسان بین همه‌ی اعضا توزیع می‌شود</li>
+      <li><span class="ck">✓</span> اعضا در اداره‌ی شرکت با هم مشارکت می‌کنند و برای یک هدف مشترک تلاش می‌کنند</li>
+    </ul>
+  </div>
+
+  <div class="card reveal">
+    <span class="c-icon">🇮🇷</span>
+    <h3>نظام اقتصادی ایران: سه بخش</h3>
+    <p>بر طبق قانون اساسی جمهوری اسلامی ایران، نظام اقتصادی کشور بر پایه‌ی <b>سه بخش</b> استوار است:</p>
+    <div class="grid3" style="margin-top:14px">
+      <div class="card" style="box-shadow:none;border-top:5px solid var(--primary)">
+        <b>🏛️ ۱. بخش دولتی</b>
+        <p class="muted" style="font-size:.85rem">در این بخش، اداره‌ی بنگاه‌های اقتصادی <b>بزرگ</b> در دست دولت است؛ مانند صنایع <b>ذوب‌آهن و پتروشیمی</b> که توسط دولت اداره می‌شوند.</p>
+      </div>
+      <div class="card" style="box-shadow:none;border-top:5px solid var(--orange)">
+        <b>🧑‍💼 ۲. بخش خصوصی</b>
+        <p class="muted" style="font-size:.85rem">در این بخش، مالکیت و اداره‌ی بنگاه‌های اقتصادی <b>کوچک</b> در دست افراد است؛ مانند فردی که صاحب یک <b>کارخانه، مزرعه یا مغازه</b> است.</p>
+      </div>
+      <div class="card" style="box-shadow:none;border-top:5px solid var(--teal)">
+        <b>🤝 ۳. بخش تعاونی</b>
+        <p class="muted" style="font-size:.85rem">اقتصادهای این بخش به صورت <b>شرکت تعاونی</b> اداره می‌شوند؛ مشارکت اعضا با همکاری و سرمایه‌ی مشترک.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card reveal">
+    <span class="c-icon">🔎</span>
+    <h3>انواع شرکت‌های تعاونی (بیشتر بدانیم)</h3>
+    <div class="grid3" style="margin-top:12px">
+      <div class="card" style="box-shadow:none;border:1.5px dashed var(--border)"><b>🏭 تعاونی تولیدی</b><p class="muted" style="font-size:.85rem">مثل تعاونی تولیدکنندگان فرش دست‌باف و تعاونی در و پنجره‌سازان</p></div>
+      <div class="card" style="box-shadow:none;border:1.5px dashed var(--border)"><b>🛒 تعاونی توزیعی</b><p class="muted" style="font-size:.85rem">مثل تعاونی مصرف کارکنان ادارات، مؤسسات و شرکت‌ها</p></div>
+      <div class="card" style="box-shadow:none;border:1.5px dashed var(--border)"><b>🚕 تعاونی خدماتی</b><p class="muted" style="font-size:.85rem">مثل تعاونی حسابداران و تعاونی دندان‌پزشکان</p></div>
+    </div>
+  </div>
+
+  <details class="acc reveal">
+    <summary>📖 واژه‌های مهم درس ۲ (برای امتحان! کلیک کن)</summary>
+    <div class="acc-body">
+      <b>مردم‌نهاد (سمن/NGO):</b> گروهی از افراد علاقه‌مند به رفع یک مشکل در جامعه، به‌صورت داوطلبانه، غیردولتی و غیرتجاری (بدون هدف سود بردن) در اموری مانند عمران و آبادانی، مقابله با آسیب‌های اجتماعی و حفظ محیط زیست فعالیت می‌کنند.<br>
+      <b>مؤسسات خیریه:</b> مؤسساتی که در آن‌ها گروهی از افراد نیکوکار برای تأمین نیازهای خانواده‌های نیازمند و آسیب‌دیده‌ی اجتماعی فعالیت می‌کنند؛ با عنوان‌هایی چون انجمن، جمعیت و نهاد.<br>
+      <b>ایتام:</b> جمعِ یتیم؛ کسانی که پدر یا مادر خود را در کودکی از دست داده باشند.<br>
+      <b>مددکار:</b> فردی که در انجمن‌ها و مؤسسات خیریه به افراد نیازمند (مددجو) کمک و یاری می‌کند.<br>
+      <b>بنگاه اقتصادی:</b> هر مکانی که در آن فعالیتی اقتصادی انجام شود؛ از یک مغازه‌ی کوچک تا کارخانه‌های بزرگ.<br>
+      <b>واقف:</b> کسی که چیزی را وقف می‌کند.
+    </div>
+  </details>
+
+  <div class="sum-box reveal">
+    <h4>⚡ خلاصه‌ی درس ۲ در یک نگاه</h4>
+    <ul>
+      <li>تعاون فقط در خانه و محله نیست؛ نیکوکاران <b>فردی</b> و <b>گروهی</b> در سطح جامعه کمک می‌کنند.</li>
+      <li><b>انفاق</b> = یاری رساندن به نیازمندان با بخشش مال، علم، توانایی‌ها و وقت (آیه ۹۲ سوره آل عمران).</li>
+      <li>سازمان‌های خیریه باید از <b>وزارت کشور</b> مجوز بگیرند.</li>
+      <li><b>خیرین مدرسه‌ساز</b> مدارس را رایگان به وزارت آموزش و پرورش می‌دهند.</li>
+      <li><b>وقف:</b> واقف = وقف‌کننده | موقوفات = اموال وقف‌شده | کسی حق تصرف ندارد و تا ابد باید به همان صورت استفاده شود.</li>
+      <li>در شرکت تعاونی هر عضو با هر سرمایه <b>یک حق رأی</b> دارد و منافع <b>به‌طور برابر</b> تقسیم می‌شود.</li>
+      <li>نظام اقتصادی ایران: <b>دولتی + خصوصی + تعاونی</b>.</li>
+    </ul>
+  </div>
+
+  <div class="done-bar reveal"><button class="done-btn" data-lesson="l2">✓ این درس را خواندم</button></div>
+</section>
+<!-- ============ LESSON 3 ============ -->
+<section id="l3">
+  <div class="section-head reveal">
+    <span class="emoji-chip" style="background:linear-gradient(135deg,#fce7f3,#fbcfe8)">🏛️</span>
+    <h2>درس ۳: ساختار و تشکیلات دولت</h2>
+    <div class="bar"></div>
+    <p class="desc">در این درس یاد می‌گیریم کشور چگونه اداره می‌شود، رئیس‌جمهور چگونه انتخاب می‌شود و وزارت‌خانه‌ها چه کارهایی انجام می‌دهند.</p>
+  </div>
+
+  <div class="book-hl reveal">
+    <div class="hl-text"><mark>حکومت کشور ما «جمهوری اسلامی» است که به وسیله‌ی سه قوه (مقننه، قضائیه و مجریه)، زیر نظر مقام رهبری اداره می‌شود.</mark></div>
+    <div class="why"><b>توضیح:</b> کشور مثل یک کلاس بزرگ است که یک نفر نمی‌تواند همه‌ی کارهایش را بکند! پس کارها بین <b>سه قوه</b> تقسیم شده و همه‌ی آن‌ها <b>زیر نظر رهبر</b> کار می‌کنند. سال گذشته با قوه‌ی مقننه (مجلس) آشنا شدید، این فصل قوه‌ی مجریه (دولت) و فصل بعد قوه‌ی قضائیه را یاد می‌گیرید. ⚖️</div>
+  </div>
+
+  <div class="pow-wrap reveal">
+    <div class="pow-top">🙏 مقام رهبری<small>نظارت بر قوای سه‌گانه</small></div>
+    <div class="pow-lines"></div>
+    <div class="pow-row">
+      <div class="pow" style="border-top-color:var(--primary)">
+        <span class="p-emoji">📜</span>
+        <h4>قوه‌ی مقننه</h4>
+        <span class="p-org">مجلس شورای اسلامی</span>
+        <p>قانون‌گذاری: ساختن و تصویب قوانین برای کشور</p>
+      </div>
+      <div class="pow" style="border-top-color:var(--teal)">
+        <span class="p-emoji">⚖️</span>
+        <h4>قوه‌ی قضائیه</h4>
+        <span class="p-org">دادگستری</span>
+        <p>رسیدگی به دعواها و اجرای عدالت (فصل بعد!) 🕐</p>
+      </div>
+      <div class="pow" style="border-top-color:var(--pink)">
+        <span class="p-emoji">🏗️</span>
+        <h4>قوه‌ی مجریه</h4>
+        <span class="p-org">دولت</span>
+        <p>اجرای قوانین و اداره‌ی کشور (موضوع این درس) ⭐</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="book-hl reveal">
+    <div class="hl-text"><mark>قوه‌ی مجریه، همان دولت و سازمان‌های وابسته به دولت است. ریاست قوه‌ی مجریه بر عهده‌ی رئیس‌جمهور است که پس از مقام رهبری، عالی‌ترین مقام رسمی کشور است و مسئولیت اجرای قانون اساسی و قوانین مصوب مجلس را بر عهده دارد.</mark></div>
+    <div class="why"><b>نکته‌ی امتحانی!</b> قوه‌ی مجریه = <b>دولت + سازمان‌های وابسته</b> 💼 | رئیس آن = <b>رئیس‌جمهور</b> | و رئیس‌جمهور <b>پس از رهبر، عالی‌ترین مقام رسمی کشور</b> است و مسئول <b>اجرای قانون اساسی و قوانین مصوب مجلس</b> هم هست.</div>
+  </div>
+
+  <div class="card reveal">
+    <span class="c-icon">🗳️</span>
+    <h3>رئیس‌جمهور چگونه انتخاب می‌شود؟</h3>
+    <div class="steps">
+      <div class="step"><span class="s-num"></span><div class="s-body"><b>اعلام داوطلبی</b><p>کسانی که شرایط ریاست‌جمهوری را دارند، برای این مقام داوطلب می‌شوند.</p></div></div>
+      <div class="step"><span class="s-num"></span><div class="s-body"><b>تأیید صلاحیت توسط <span class="tip" tabindex="0" data-tip="شورایی که صلاحیت نامزدهای انتخابات و قوانین مجلس را بررسی می‌کند">شورای نگهبان</span></b><p>صلاحیت داوطلبان بررسی و تأیید می‌شود.</p></div></div>
+      <div class="step"><span class="s-num"></span><div class="s-body"><b>تبلیغات انتخاباتی</b><p>نامزدها برنامه‌های خود را از طریق صداوسیما، روزنامه‌ها، مجلات، اینترنت و سخنرانی‌های مختلف به مردم می‌رسانند.</p></div></div>
+      <div class="step"><span class="s-num"></span><div class="s-body"><b>روز رأی‌گیری</b><p>مردم با رأی مستقیم، رئیس‌جمهور را انتخاب می‌کنند. همه‌ی کسانی که ایرانی و تبعه‌ی جمهوری اسلامی ایران هستند — حتی آن‌هایی که در خارج از کشور زندگی می‌کنند — می‌توانند رأی بدهند. حداقل سن رأی: ۱۸ سال.</p></div></div>
+      <div class="step"><span class="s-num"></span><div class="s-body"><b><span class="tip" tabindex="0" data-tip="امضای حکم رئیس‌جمهور منتخب توسط رهبر برای شروع به کار">تنفیذ</span> توسط رهبر</b><p>پس از آنکه رئیس‌جمهور با حداکثر آرای مردم انتخاب شد، برای شروع به کار، حکم وی توسط رهبر امضا و تنفیذ می‌شود.</p></div></div>
+      <div class="step"><span class="s-num"></span><div class="s-body"><b><span class="tip" tabindex="0" data-tip="سوگند خوردن رئیس‌جمهور در مجلس در پیشگاه قرآن کریم">تحلیف</span> (سوگند) در مجلس</b><p>رئیس‌جمهور در مجلس شورای اسلامی با حضور نمایندگان، در پیشگاه قرآن سوگند یاد می‌کند که وظایف خود را مانند ترویج دین و اخلاق، پشتیبانی از حق، گسترش عدالت و پاسداری از قانون اساسی به‌درستی انجام دهد.</p></div></div>
+    </div>
+    <div class="chips">
+      <span class="chip">⏳ دوره: ۴ سال</span>
+      <span class="chip">🔁 فقط یک دوره‌ی چهار ساله‌ی دیگر انتخاب مجدد متوالی</span>
+      <span class="chip">🗳️ انتخاب با رأی مستقیم مردم</span>
+      <span class="chip">🎂 حداقل سن رأی: ۱۸ سال</span>
+    </div>
+    <div class="book-hl" style="margin:14px 0 0">
+      <div class="hl-text"><mark>رئیس‌جمهور برای مدت چهار سال با رأی مستقیم مردم انتخاب می‌شود و تنها برای یک دوره‌ی چهار ساله‌ی دیگر به صورت متوالی، انتخاب مجدد را می‌تواند داشته باشد.</mark></div>
+      <div class="why"><b>یعنی چه؟</b> یک رئیس‌جمهور حداکثر <b>۸ سال پشت سر هم</b> (۴ + ۴) می‌تواند رئیس‌جمهور بماند؛ نه بیشتر! اما بعد از یک فاصله، ممکن است دوباره داوطلب شود.</div>
+    </div>
+  </div>
+
+  <div class="card reveal">
+    <span class="c-icon">📋</span>
+    <h3>شرایط رئیس‌جمهور (اصل ۱۱۵ قانون اساسی)</h3>
+    <p>بر طبق اصل ۱۱۵ قانون اساسی، رئیس‌جمهور باید از میان رجال مذهبی و سیاسی که واجد شرایط زیر باشند، انتخاب گردد:</p>
+    <ul class="check-list">
+      <li><span class="ck">۱</span> <b>ایرانی‌الاصل</b> بودن</li>
+      <li><span class="ck">۲</span> <b>تابع ایران</b> بودن</li>
+      <li><span class="ck">۳</span> <b>مدیر و مدبّر</b> بودن</li>
+      <li><span class="ck">۴</span> داشتن <b>حسن سابقه، امانت و تقوا</b></li>
+      <li><span class="ck">۵</span> <b>مؤمن و معتقد به مبانی جمهوری اسلامی ایران و مذهب رسمی کشور</b> بودن</li>
+    </ul>
+    <p class="muted" style="font-size:.85rem">⚠️ دقت کن: «حداقل ۴۰ سال سن» از شرایط رئیس‌جمهور در کتاب شما نیست! این یک گزینه‌ی قلابی در تست‌هاست.</p>
+  </div>
+
+  <div class="card reveal">
+    <span class="c-icon">🏢</span>
+    <h3>تشکیل دولت — کابینه (هیئت دولت)</h3>
+    <p>رئیس‌جمهور پس از انتخاب شدن، برای خود معاونانی انتخاب می‌کند و در شروع کار خود، افرادی را به‌عنوان وزیر انتخاب و به مجلس معرفی می‌کند:</p>
+    <div class="steps">
+      <div class="step"><span class="s-num"></span><div class="s-body"><b>معرفی وزیران</b><p>رئیس‌جمهور وزیران پیشنهادی خود را معرفی می‌کند.</p></div></div>
+      <div class="step"><span class="s-num"></span><div class="s-body"><b>بررسی در مجلس</b><p>وزیران پیشنهادی در <b>مجلس شورای اسلامی</b> بررسی می‌شوند.</p></div></div>
+      <div class="step"><span class="s-num"></span><div class="s-body"><b>رأی اعتماد نمایندگان</b><p>پس از گرفتن <b>رأی اعتماد از مجلس</b>، وزیران کار خود را آغاز می‌کنند.</p></div></div>
+      <div class="step"><span class="s-num"></span><div class="s-body"><b>تشکیل کابینه</b><p>کابینه (هیئت دولت) از <b>رئیس‌جمهور، معاونان و وزیران</b> تشکیل می‌شود.</p></div></div>
+    </div>
+    <ul class="check-list">
+      <li><span class="ck">✓</span> <b>کابینه (هیئت دولت) = رئیس‌جمهور + معاونان + وزیران</b></li>
+      <li><span class="ck">✓</span> هیئت دولت در طی سال، <b>جلسات متعددی</b> برگزار می‌کند و رئیس‌جمهور و وزیران درباره‌ی مسائل مهم کشور و جهان با مشورت یکدیگر تصمیم‌گیری می‌کنند.</li>
+      <li><span class="ck">✓</span> مقر هیئت دولت و وزارت‌خانه‌ها در <b>تهران</b> (پایتخت) است؛ اما وزارت‌خانه‌ها در <b>همه‌ی استان‌های کشور</b> سازمان‌ها و اداراتی دارند که برنامه‌های آن‌ها را اجرا می‌کنند.</li>
+    </ul>
+  </div>
+
+  <div class="card reveal">
+    <span class="c-icon">🏛️</span>
+    <h3>وزارت‌خانه‌های جمهوری اسلامی ایران</h3>
+    <p>هر وزارت‌خانه مسئولیت بخشی از کارهای کشور را دارد. 🧭 مهم است بدانی هر کار روزمره‌ات به کدام وزارت‌خانه مربوط است:</p>
+    <div class="ministry-grid">
+      <div class="ministry"><span class="m-ic">🎒</span>وزارت آموزش و پرورش</div>
+      <div class="ministry"><span class="m-ic">🏥</span>وزارت بهداشت، درمان و آموزش پزشکی</div>
+      <div class="ministry"><span class="m-ic">🌍</span>وزارت امور خارجه</div>
+      <div class="ministry"><span class="m-ic">🌾</span>وزارت جهاد کشاورزی</div>
+      <div class="ministry"><span class="m-ic">🛡️</span>وزارت کشور</div>
+      <div class="ministry"><span class="m-ic">🏭</span>وزارت صنعت، معدن و تجارت</div>
+      <div class="ministry"><span class="m-ic">⚖️</span>وزارت دادگستری</div>
+      <div class="ministry"><span class="m-ic">🛣️</span>وزارت راه و شهرسازی</div>
+      <div class="ministry"><span class="m-ic">⛽</span>وزارت نفت</div>
+      <div class="ministry"><span class="m-ic">📡</span>وزارت ارتباطات و فناوری اطلاعات</div>
+      <div class="ministry"><span class="m-ic">⚽</span>وزارت ورزش و جوانان</div>
+      <div class="ministry"><span class="m-ic">🔬</span>وزارت علوم، تحقیقات و فناوری</div>
+      <div class="ministry"><span class="m-ic">⚡</span>وزارت نیرو</div>
+      <div class="ministry"><span class="m-ic">🎬</span>وزارت فرهنگ و ارشاد اسلامی</div>
+      <div class="ministry"><span class="m-ic">🤝</span>وزارت تعاون، کار و رفاه اجتماعی</div>
+      <div class="ministry"><span class="m-ic">💰</span>وزارت امور اقتصادی و دارایی</div>
+      <div class="ministry"><span class="m-ic">🎖️</span>وزارت دفاع و پشتیبانی نیروهای مسلح</div>
+      <div class="ministry"><span class="m-ic">🏺</span>وزارت میراث فرهنگی، گردشگری و صنایع دستی</div>
+      <div class="ministry"><span class="m-ic">🗂️</span>وزارت اطلاعات</div>
+    </div>
+    <p class="muted" style="font-size:.85rem">📌 طبق کتاب درسی: «تعداد وزارت‌خانه‌های کشور ما <b>نوزده</b> وزارت‌خانه است.»</p>
+    <details class="acc" style="margin-top:14px">
+      <summary>🧩 تمرین کتاب: کارهای روزمره به کدام وزارت‌خانه مربوط‌اند؟ (کلیک کن!)</summary>
+      <div class="acc-body">
+        🎒 درس خواندن در مدرسه ← <b>وزارت آموزش و پرورش</b><br>
+        🚌 استفاده از اتوبوس برای رفت‌وآمد بین شهرها ← <b>وزارت راه و شهرسازی</b><br>
+        🩹 درمان و بیمارستان ← <b>وزارت بهداشت، درمان و آموزش پزشکی</b><br>
+        🎬 رفتن به سینما و کتابخانه ← <b>وزارت فرهنگ و ارشاد اسلامی</b><br>
+        🚰 مصرف آب و برق ← <b>وزارت نیرو</b><br>
+        🌾 کشاورزی و محصولات کشاورزی ← <b>وزارت جهاد کشاورزی</b>
+      </div>
+    </details>
+  </div>
+
+  <div class="sum-box reveal">
+    <h4>⚡ خلاصه‌ی درس ۳ در یک نگاه</h4>
+    <ul>
+      <li>حکومت ایران: <b>جمهوری اسلامی</b> | اداره با <b>سه قوه</b> (مقننه، قضائیه، مجریه) زیر نظر <b>رهبری</b>.</li>
+      <li><b>قوه‌ی مجریه = دولت و سازمان‌های وابسته</b> | رئیس آن: <b>رئیس‌جمهور</b> (عالی‌ترین مقام رسمی پس از رهبر).</li>
+      <li>انتخاب رئیس‌جمهور: <b>۴ سال، رأی مستقیم مردم</b>، حداکثر <b>۸ سال متوالی</b>، تأیید صلاحیت با <b>شورای نگهبان</b>، رأی از <b>۱۸ سال</b>.</li>
+      <li>شرایط رئیس‌جمهور (اصل ۱۱۵): ایرانی‌الاصل، تابع ایران، مدیر و مدبّر، حسن سابقه و امانت و تقوی، مؤمن و معتقد به مبانی جمهوری اسلامی و مذهب رسمی کشور.</li>
+      <li>مراحل: داوطلبی ← تأیید <b>شورای نگهبان</b> ← تبلیغات ← رأی ← <b>تنفیذ</b> توسط رهبر ← <b>تحلیف</b> در مجلس.</li>
+      <li>وزیران باید <b>رأی اعتماد مجلس</b> بگیرند | <b>کابینه (هیئت دولت) = رئیس‌جمهور + معاونان + وزیران</b> | جلسات <b>متعدد</b> در سال.</li>
+      <li>تعداد وزارت‌خانه‌ها: <b>۱۹</b> وزارت‌خانه.</li>
+    </ul>
+  </div>
+
+  <div class="done-bar reveal"><button class="done-btn" data-lesson="l3">✓ این درس را خواندم</button></div>
+</section>
+<!-- ============ LESSON 4 ============ -->
+<section id="l4">
+  <div class="section-head reveal">
+    <span class="emoji-chip" style="background:linear-gradient(135deg,#fef3c7,#fde68a)">⚖️</span>
+    <h2>درس ۴: وظایف دولت</h2>
+    <div class="bar"></div>
+    <p class="desc">در این درس یاد می‌گیریم شهروند کیست، چه حقوق و تکالیفی دارد، دولت چه وظایفی دارد و بودجه چیست.</p>
+  </div>
+
+  <div class="card reveal">
+    <span class="c-icon">🧑‍🤝‍🧑</span>
+    <h3>دولت و شهروندان — شهروند کیست؟</h3>
+    <div class="book-hl" style="margin-top:10px">
+      <div class="hl-text"><mark>منظور از شهروندان، اَتباع یک کشور است. همه‌ی کسانی که تابعیت دولت جمهوری اسلامی ایران را دارند، چه شهری باشند، چه روستایی و عشایر، چه در داخل کشور زندگی کنند و چه در خارج از کشور، شهروند ایران محسوب می‌شوند.</mark></div>
+      <div class="why"><b>توضیح:</b> <span class="tip" tabindex="0" data-tip="رابطه‌ی حقوقی یک شخص با یک کشور؛ مانند تابعیت ایران">تابعیت</span> یعنی ارتباط رسمی یک نفر با یک کشور. «اتباع» جمعِ «تبعه» است و یعنی شهروندان. هر کسی <b>تابعیت ایرانی</b> داشته باشد — شهری، روستایی، عشایری، داخل یا خارج کشور — <b>شهروند ایران</b> است. 🇮🇷</div>
+    </div>
+  </div>
+
+  <div class="card reveal">
+    <span class="c-icon">🤝</span>
+    <h3>حقوق و وظایف شهروندان (هر دو را با هم یاد بگیر!)</h3>
+    <div class="vs-wrap">
+      <div class="vs-col rights">
+        <h4>🎁 حقوق شهروندان (چیزهایی که حق دارند)</h4>
+        <ul>
+          <li>✅ از <b>خدمات دولت</b> در زمینه‌های مختلف بهره‌مند شوند</li>
+          <li>✅ <b>آزادی بیان</b> داشته باشند</li>
+          <li>✅ حق <b>اظهار نظر و انتقاد</b> داشته باشند</li>
+        </ul>
+      </div>
+      <div class="vs-badge">⚡</div>
+      <div class="vs-col duties">
+        <h4>📌 وظایف شهروندان (چیزهایی که باید انجام بدهند)</h4>
+        <ul>
+          <li>🔹 به <b>قوانین و مقررات</b> کشور احترام بگذارند و رعایت کنند</li>
+          <li>🔹 با دولت <b>مشارکت و همکاری صمیمانه</b> داشته باشند</li>
+          <li>🔹 <b>مالیات</b> خود را بپردازند</li>
+          <li>🔹 در هنگام جنگ از <b>کشور دفاع</b> کنند</li>
+        </ul>
+      </div>
+    </div>
+    <p class="muted" style="font-size:.88rem">💡 مثل یک قرارداد دوطرفه: دولت حق‌هایی به تو می‌دهد و تو هم در مقابل، وظیفه‌هایی داری!</p>
+  </div>
+
+  <div class="card reveal">
+    <span class="c-icon">🏛️</span>
+    <h3>مهم‌ترین وظایف دولت و رئیس‌جمهور</h3>
+    <div class="book-hl" style="margin-top:10px">
+      <div class="hl-text"><mark>بر طبق قانون اساسی جمهوری اسلامی ایران، دولت موظف است شرایط و لوازم سواد و آموزش، بهداشت، شغل مناسب، رفاه، امنیت، فرهنگ و اخلاق اسلامی را در جامعه فراهم کند. دولت، همچنین وظیفه دارد تجهیزات زیربنایی و خدمات عمومی مانند ساختن راه و جاده، پل، بیمارستان، مسکن، مدرسه، سد، مخابرات، آب، برق و گاز و... را در کشور، گسترش دهد.</mark></div>
+      <div class="why"><b>خلاصه برای امتحان:</b> دو وظیفه‌ی بزرگ دولت: ۱) فراهم کردن <b>آموزش، بهداشت، شغل مناسب، رفاه، امنیت و فرهنگ اسلامی</b> ۲) گسترش <b>تجهیزات زیربنایی و خدمات عمومی</b> (راه، پل، بیمارستان، مسکن، مدرسه، سد، مخابرات، آب، برق، گاز...). 🏗️</div>
+    </div>
+    <p><b>اجرای قوانین و مصوبات مجلس</b> (پس از تصویب در مجلس شورای اسلامی) نیز از وظایف مهم دولت است.</p>
+  </div>
+
+  <div class="card reveal">
+    <span class="c-icon">👔</span>
+    <h3>وظایف و اختیارات رئیس‌جمهور</h3>
+    <div class="grid2" style="margin-top:12px">
+      <div class="card" style="box-shadow:none;border:1.5px dashed var(--border)"><b>🧑‍💼 هدایت وزیران</b><p class="muted" style="font-size:.85rem">وزیران را هدایت می‌کند و بین آن‌ها هماهنگی ایجاد می‌کند.</p></div>
+      <div class="card" style="box-shadow:none;border:1.5px dashed var(--border)"><b>📄 امضای قراردادها</b><p class="muted" style="font-size:.85rem">قراردادهایی را که بین ایران و کشورهای دیگر بسته می‌شود، امضا می‌کند.</p></div>
+      <div class="card" style="box-shadow:none;border:1.5px dashed var(--border)"><b>✉️ امضا و پذیرش <span class="tip" tabindex="0" data-tip="نامه‌ای که سران کشورها برای معرفی سفیر خود به کشور دیگر می‌فرستند">استوارنامه</span></b><p class="muted" style="font-size:.85rem">استوارنامه‌ی سفیران کشور ما را امضا می‌کند و استوارنامه‌ی سفیران سایر کشورها را می‌پذیرد.</p></div>
+      <div class="card" style="box-shadow:none;border:1.5px dashed var(--border)"><b>🏅 اعطای نشان‌های دولتی</b><p class="muted" style="font-size:.85rem">به افراد زحمتکش و شایسته، نشان‌های دولتی اعطا می‌کند.</p></div>
+    </div>
+    <div class="hadith-box" style="margin-top:14px;background:linear-gradient(135deg,#b91c1c,#f43f5e)">
+      <span class="h-icon">⏰ بدانیم!</span>
+      <div class="h-text">ریاست جمهوری یکی از پرمشغله‌ترین امور کشور است؛ یک رئیس‌جمهور از بامداد تا شب و حتی روزهای تعطیل، مشغول انجام وظایف و رسیدگی به امور مختلف کشور است.</div>
+    </div>
+  </div>
+
+  <div class="card reveal">
+    <span class="c-icon">🏛️↔️</span>
+    <h3>رابطه‌ی دولت و مجلس</h3>
+    <ul class="check-list">
+      <li><span class="ck">۱</span> <b>لایحه:</b> یکی از اقدامات دولت‌ها، تنظیم «لایحه» (پیش‌نویس قانون) در امور مختلف است. این لوایح برای <b>تصویب و قانونی شدن به مجلس</b> شورای اسلامی فرستاده می‌شوند.</li>
+      <li><span class="ck">۲</span> <b>نظارت و سؤال:</b> نمایندگان مجلس بر فعالیت‌های دولت <b>نظارت می‌کنند</b> و حق <b>سؤال‌کردن از رئیس‌جمهور و وزرا</b> را دارند.</li>
+      <li><span class="ck">۳</span> <b><span class="tip" tabindex="0" data-tip="یعنی توضیح خواستن؛ وزیر باید در مجلس حاضر شود، توضیح دهد و دوباره رأی اعتماد بگیرد">استیضاح</span>:</b> گاهی ممکن است مجلس، وزیری را استیضاح کند؛ یعنی وزیر باید در مجلس حاضر شود و درباره‌ی کارهایش توضیح دهد و سپس برای ادامه‌ی کار، دوباره از مجلس رأی اعتماد بگیرد.</li>
+    </ul>
+  </div>
+
+  <div class="card reveal">
+    <span class="c-icon">💸</span>
+    <h3>درآمدها و هزینه‌های دولت</h3>
+    <p>دولت با امور گوناگونی سروکار دارد و در همه‌ی این امور باید <b>پول خرج کند</b>: هزینه‌ی آموزش، بهداشت، اوقات فراغت، حفاظت از محیط زیست، مسکن، کشاورزی، صنعت و سرمایه‌گذاری‌های عمرانی مثل ساختن پل، جاده، فرودگاه، نیروگاه برق و... . پس دولت باید <b>درآمد</b> هم داشته باشد!</p>
+    <p><b>درآمدهای دولت در کشور ما به سه بخش تقسیم می‌شود:</b></p>
+    <div class="grid3" style="margin-top:12px">
+      <div class="card" style="box-shadow:none;border-top:5px solid #06b6d4"><b>🛢️ ۱. درآمد صادرات نفت</b><p class="muted" style="font-size:.85rem">بزرگ‌ترین منبع درآمد دولت ایران</p></div>
+      <div class="card" style="box-shadow:none;border-top:5px solid var(--green)"><b>🧾 ۲. مالیات‌ها</b><p class="muted" style="font-size:.85rem">پولی که افراد و مؤسسات طبق قانون به دولت می‌پردازند</p></div>
+      <div class="card" style="box-shadow:none;border-top:5px solid var(--orange)"><b>📦 ۳. سایر درآمدها</b><p class="muted" style="font-size:.85rem">سایر منابع که کوچک‌تر از دو مورد بالاست</p></div>
+    </div>
+    <div class="book-hl" style="margin-top:16px">
+      <div class="hl-text"><mark>بخشی از درآمدهای دولت نیز از راه «مالیات» تأمین می‌شود. مالیات پولی است که بر طبق قانون، افراد و مؤسسات به دولت می‌پردازند تا در جهت اداره‌ی امور کشور، مورد استفاده قرار بگیرد.</mark></div>
+      <div class="why"><b>توضیح:</b> مالیات مثل اشتراک همه‌ی ما در هزینه‌های کشور است! هر کس طبق قانون مقداری از درآمدش را به دولت بدهد، دولت با آن مدرسه، بیمارستان و جاده می‌سازد. 🧾</div>
+    </div>
+    <details class="acc">
+      <summary>📦 «سایر درآمدها» چیست؟ (کلیک کن!)</summary>
+      <div class="acc-body">
+        بخش دیگری از درآمدهای دولت که در مقایسه با دو مورد دیگر کوچک‌تر است از سایر منابع تأمین می‌شود؛ برای مثال:
+        <ul class="check-list" style="margin-top:8px">
+          <li><span class="ck">💡</span> درآمد ارائه‌ی خدمات برق، آب، گاز و تلفن به مردم</li>
+          <li><span class="ck">📄</span> درآمد خدماتی مانند صدور گواهینامه‌ی رانندگی، سند مالکیت، گذرنامه و نظایر آن</li>
+          <li><span class="ck">🏭</span> درآمد ناشی از سرمایه‌گذاری در صنایع بزرگ</li>
+        </ul>
+      </div>
+    </details>
+  </div>
+
+  <div class="card reveal">
+    <span class="c-icon">📊</span>
+    <h3>بودجه چیست؟</h3>
+    <div class="book-hl" style="margin-top:10px">
+      <div class="hl-text"><mark>بودجه به زبان ساده یعنی پیش‌بینی دخل و خرج دولت یا همان درآمدها و هزینه‌ها. بودجه سندی است که دولت در آن درآمدها و هزینه‌های یک کشور را برای یک سال، معین می‌کند. یکی از وظایف مهم دولت‌ها، تنظیم «لایحه‌ی بودجه» است. این سند باید در مجلس شورای اسلامی تصویب شود. علاوه بر آن، مجلس بر درآمدها و هزینه‌های دولت نظارت می‌کند.</mark></div>
+      <div class="why"><b>یعنی چه؟</b> بودجه مثل دفتر حساب خونه‌ی شماست، ولی برای کل کشور! دولت اول حساب می‌کند <b>چقدر درآمد</b> دارد و <b>چقدر خرج</b> باید بکند (برای یک سال) و این سند («لایحه‌ی بودجه») باید به <b>مجلس</b> برود و تصویب شود. مجلس هم همیشه <b>نظارت</b> می‌کند. 📊</div>
+    </div>
+    <div class="bud-eq">📊 بودجه = پیش‌بینی درآمدها + پیش‌بینی هزینه‌ها</div>
+    <div class="bud-wrap">
+      <div class="bud in">
+        <span class="b-emoji">💰</span> پیش‌بینی درآمدها (دخل)
+        <ul>
+          <li>🛢️ صادرات نفت</li>
+          <li>🧾 مالیات‌ها</li>
+          <li>📦 سایر درآمدها</li>
+        </ul>
+      </div>
+      <div class="bud out">
+        <span class="b-emoji">🧱</span> پیش‌بینی هزینه‌ها (خرج)
+        <ul>
+          <li>🎒 آموزش و بهداشت</li>
+          <li>🛣️ پروژه‌های عمرانی (پل، جاده، فرودگاه)</li>
+          <li>💼 حقوق کارکنان دولت</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="sum-box reveal">
+    <h4>⚡ خلاصه‌ی درس ۴ در یک نگاه</h4>
+    <ul>
+      <li><b>شهروند</b> = هر کسی که تابعیت یک کشور را داشته باشد (اتباع آن کشور؛ داخل یا خارج از آن).</li>
+      <li>حقوق شهروند: بهره‌مندی از خدمات دولت + آزادی بیان، اظهار نظر و انتقاد.</li>
+      <li>وظایف شهروند: احترام به قوانین + همکاری با دولت + پرداخت مالیات + دفاع از کشور.</li>
+      <li>وظایف دولت: آموزش، بهداشت، <b>شغل مناسب</b>، رفاه، امنیت، فرهنگ اسلامی + تجهیزات زیربنایی و خدمات عمومی + اجرای قوانین مجلس.</li>
+      <li>وظایف رئیس‌جمهور: هدایت وزیران، امضای قراردادها، امضا و پذیرش استوارنامه، اعطای نشان‌های دولتی.</li>
+      <li>دولت «لایحه» می‌نویسد ← مجلس تصویب می‌کند | مجلس نظارت، سؤال و استیضاح دارد.</li>
+      <li>درآمد دولت: <b>نفت + مالیات + سایر</b> | بودجه = پیش‌بینی دخل و خرج برای <b>یک سال</b> (لایحه‌ی بودجه ← تصویب مجلس).</li>
+    </ul>
+  </div>
+
+  <div class="done-bar reveal"><button class="done-btn" data-lesson="l4">✓ این درس را خواندم</button></div>
+</section>
+
+<!-- ============ GOLDEN POINTS ============ -->
+<section id="gold">
+  <div class="section-head reveal">
+    <span class="emoji-chip" style="background:linear-gradient(135deg,#d1fae5,#a7f3d0)">🌟</span>
+    <h2>نکات طلایی — پیش از امتحان این‌ها را مرور کن!</h2>
+    <div class="bar"></div>
+    <p class="desc">۱۲ نکته‌ای که بیشترین احتمال آمدن در آزمون را دارند. 👇</p>
+  </div>
+  <div class="grid2" style="gap:20px">
+    <div class="gold-box reveal"><span class="g-num">۱</span><p><b>تعاون</b> یعنی همکاری و کمک چند نفر برای رسیدن به یک هدف.</p></div>
+    <div class="gold-box reveal"><span class="g-num">۲</span><p>قرآن (مائده ۲): در کارهای <b>نیک و پرهیزکاری</b> یاری کنید، در <b>گناه و ستمکاری</b> همکاری نکنید.</p></div>
+    <div class="gold-box reveal"><span class="g-num">۳</span><p>همکاری نکردن در گناه: تشویق نکردن + فراهم نکردن مقدمه‌ی گناه.</p></div>
+    <div class="gold-box reveal"><span class="g-num">۴</span><p><b>انفاق</b> = بخشش مال، علم، توانایی‌ها و وقت به نیازمندان | «هرگز به نیکی نمی‌رسید مگر از آنچه دوست دارید انفاق کنید» (آل عمران ۹۲).</p></div>
+    <div class="gold-box reveal"><span class="g-num">۵</span><p>سازمان‌های خیریه باید از <b>وزارت کشور</b> مجوز بگیرند.</p></div>
+    <div class="gold-box reveal"><span class="g-num">۶</span><p><b>واقف</b> = وقف‌کننده | <b>موقوفات</b> = اموال وقف‌شده | کسی حق تصرف ندارد و <b>تا ابد</b> به همان صورت استفاده می‌شود.</p></div>
+    <div class="gold-box reveal"><span class="g-num">۷</span><p>در شرکت تعاونی هر عضو با هر مقدار سرمایه <b>یک حق رأی</b> دارد؛ منافع <b>به‌طور برابر</b> توزیع می‌شود.</p></div>
+    <div class="gold-box reveal"><span class="g-num">۸</span><p>نظام اقتصادی ایران = <b>دولتی + خصوصی + تعاونی</b> (طبق قانون اساسی).</p></div>
+    <div class="gold-box reveal"><span class="g-num">۹</span><p>سه قوه زیر نظر <b>رهبری</b>: مقننه (مجلس) + قضائیه (دادگستری) + مجریه (دولت).</p></div>
+    <div class="gold-box reveal"><span class="g-num">۱۰</span><p>رئیس‌جمهور: دوره <b>۴ ساله</b>، <b>رأی مستقیم مردم</b>، حداکثر <b>۸ سال متوالی</b>، تأیید صلاحیت با <b>شورای نگهبان</b>، عالی‌ترین مقام رسمی <b>پس از رهبر</b>.</p></div>
+    <div class="gold-box reveal"><span class="g-num">۱۱</span><p>وزیران ← معرفی توسط رئیس‌جمهور ← <b>رأی اعتماد مجلس</b> | <b>کابینه (هیئت دولت) = رئیس‌جمهور + معاونان + وزیران</b>.</p></div>
+    <div class="gold-box reveal"><span class="g-num">۱۲</span><p>درآمد دولت = <b>نفت + مالیات + سایر</b> | <b>بودجه</b> = پیش‌بینی دخل و خرج یک سال (لایحه‌ی بودجه ← تصویب مجلس ← نظارت مجلس).</p></div>
+  </div>
+  <div class="done-bar reveal"><button class="done-btn" data-lesson="gold">✓ نکات طلایی را خواندم</button></div>
+</section>
+<!-- ============ QUIZ ============ -->
+<section id="quiz">
+  <div class="section-head reveal">
+    <span class="emoji-chip" style="background:linear-gradient(135deg,#ede9fe,#ddd6fe)">📝</span>
+    <h2>امتحان تعاملی ۳۰ سؤالی</h2>
+    <div class="bar"></div>
+    <p class="desc">از همه‌ی درس‌های ۱ تا ۴ سؤال می‌آید. هرچه بلدی نشون بده! 🚀</p>
+  </div>
+
+  <div class="quiz-wrap reveal">
+    <!-- شروع -->
+    <div class="quiz-panel show" id="qIntro">
+      <div class="q-intro">
+        <h3>🎯 آماده‌ی امتحانی؟</h3>
+        <p>۳۰ سؤال چهارگزینه‌ای از درس‌های تعاون (۱)، تعاون (۲)، ساختار دولت و وظایف دولت</p>
+        <div class="q-rules">
+          <span class="q-rule">📋 ۳۰ سؤال چهارگزینه‌ای</span>
+          <span class="q-rule">✅ تصحیح خودکار + پاسخ تشریحی</span>
+          <span class="q-rule">⏱️ زمان‌سنج (بدون محدودیت زمانی)</span>
+          <span class="q-rule">🎉 نمره بالای ۸۰٪ = جشن کنفتی!</span>
+        </div>
+        <button class="btn btn-start" onclick="startQuiz()">🚀 شروع امتحان</button>
+      </div>
+    </div>
+
+    <!-- سؤال‌ها -->
+    <div class="quiz-panel" id="qBoard">
+      <div class="q-topbar">
+        <span class="q-count" id="qCount">سؤال ۱ از ۳۰</span>
+        <div class="q-progress"><i id="qProg"></i></div>
+        <span class="q-timer">⏱️ <span id="qTimer">۰۰:۰۰</span></span>
+      </div>
+      <div class="q-card" id="qCard"></div>
+      <div class="q-nav">
+        <button class="q-btn ghost" id="btnPrev" onclick="goPrev()">→ قبلی</button>
+        <span class="spacer"></span>
+        <button class="q-btn finish" id="btnFinish" onclick="finishConfirm()">🏁 اتمام و مشاهده نتیجه</button>
+        <button class="q-btn primary" id="btnNext" onclick="goNext()">بعدی ←</button>
+      </div>
+      <div class="navgrid-panel">
+        <h5>🗺️ نقشه سؤال‌ها — روی هر شماره کلیک کن تا به آن سؤال بروی (سبز = جواب داده‌شده)</h5>
+        <div class="navgrid" id="navGrid"></div>
+      </div>
+    </div>
+
+    <!-- نتیجه -->
+    <div class="quiz-panel" id="qResult"></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="f-logo">📚</div>
+  <h4>جزوه تعاملی مطالعات اجتماعی هشتم — تعاون و دولت</h4>
+  <p>درس‌های ۱ تا ۴ | ساخته‌شده برای یادگیری بهتر و مرور سریع. هر وقت این فایل را باز کنی، این‌جا منتظرت است! موفق باشی دانش‌آموز عزیز 🌟</p>
+</footer>
+
+<button id="backTop" title="برگشت به بالا" onclick="scrollTo({top:0,behavior:'smooth'})">↑</button>
+<canvas id="confetti"></canvas>
+
+<script>
+/* ================= helpers ================= */
+const $=s=>document.querySelector(s), $$=s=>document.querySelectorAll(s);
+const FA='۰۱۲۳۴۵۶۷۸۹';
+const faNum=n=>String(n).replace(/\d/g,d=>FA[d]);
+function store(k,v){try{localStorage.setItem(k,v)}catch(e){}}
+function load(k){try{return localStorage.getItem(k)}catch(e){return null}}
+
+/* ================= theme ================= */
+const themeBtn=$('#themeBtn');
+function setTheme(t){document.documentElement.classList.toggle('dark',t==='dark');themeBtn.textContent=t==='dark'?'☀️':'🌙';store('jozveh-theme',t)}
+setTheme(load('jozveh-theme')||'light');
+themeBtn.onclick=()=>setTheme(document.documentElement.classList.contains('dark')?'light':'dark');
+
+/* ================= progress bar & back-top ================= */
+window.addEventListener('scroll',()=>{
+  const h=document.documentElement, p=h.scrollTop/(h.scrollHeight-h.clientHeight)*100;
+  $('#progressBar').style.width=p+'%';
+  $('#backTop').classList.toggle('show',h.scrollTop>600);
+},{passive:true});
+
+/* ================= reveal on scroll ================= */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}}),{threshold:.08});
+$$('.reveal').forEach(el=>io.observe(el));
+
+/* ================= study progress ================= */
+const DONE_KEY='jozveh-done';
+let doneSet=new Set(JSON.parse(load(DONE_KEY)||'[]'));
+function updStudy(){
+  const total=5, pct=Math.round(doneSet.size/total*100);
+  $('#studyPill').textContent='📖 پیشرفت مطالعه: '+faNum(pct)+'٪';
+}
+$$('.done-btn').forEach(b=>{
+  if(doneSet.has(b.dataset.lesson)){b.classList.add('on');b.textContent='✔ خوانده شد — آفرین!'}
+  b.onclick=()=>{
+    const k=b.dataset.lesson;
+    if(doneSet.has(k)){doneSet.delete(k);b.classList.remove('on');b.textContent='✓ این درس را خواندم'}
+    else{doneSet.add(k);b.classList.add('on');b.textContent='✔ خوانده شد — آفرین! 🎉'}
+    store(DONE_KEY,JSON.stringify([...doneSet]));updStudy();
+  };
+});
+updStudy();
+/* ================= QUIZ DATA (30 questions) ================= */
+const C1='#5b5ef0',C2='#0ea5a4',C3='#ec4899',C4='#f59e0b';
+const L1='درس ۱ — تعاون (۱)',L2='درس ۲ — تعاون (۲)',L3='درس ۳ — ساختار دولت',L4='درس ۴ — وظایف دولت';
+const QS=[
+ {l:L1,c:C1,q:'«تعاون» به چه زمانی گفته می‌شود؟',o:['وقتی یک نفر کارهای همه را انجام می‌دهد','زمانی که چند نفر برای رسیدن به هدفی با هم همکاری و کمک کنند','وقتی افراد با هم رقابت می‌کنند','زمانی که کارها فقط توسط بزرگ‌ترها انجام می‌شود'],a:1,e:'تعاون یعنی همکاری و کمک چند نفر برای رسیدن به یک هدف مشترک.'},
+ {l:L1,c:C1,q:'در ماجرای (۱)، احمدآقا چرا نمی‌توانست کارهای روزمره‌اش را انجام دهد؟',o:['به سفر رفته بود','مغازه‌اش را فروخته بود','در تصادف، دست و پای او گچ گرفته شده بود','بیماری ساده‌ای داشت'],a:2,e:'احمدآقا در تصادف آسیب دید و به گفته پزشک درمانش سه ماه طول می‌کشید؛ به همین دلیل خانواده‌اش کارها را تقسیم کردند.'},
+ {l:L1,c:C1,q:'خویشاوندان احمدآقا برای کمک به او، کارها را چگونه تقسیم کردند؟',o:['هر کس خودش تصمیم گرفت','با دور هم جمع شدن و گفت‌وگو، کارها را بین خود تقسیم کردند','کارها را به یک نفر دادند','صبر کردند تا احمدآقا خوب شود'],a:1,e:'آنان دور هم جمع شدند، گفت‌وگو کردند و به تصمیم خوبی رسیدند؛ سپس هر کس یک مسئولیت گرفت.'},
+ {l:L1,c:C1,q:'در ماجرای (۲)، مشکل شهرک دورافتاده چه بود و چگونه حل شد؟',o:['آلودگی و بوی بد زباله؛ با تفکیک زباله و فروش زباله‌های قابل بازیافت','کمبود آب آشامیدنی؛ با ساختن آب‌انبار','نبود مدرسه؛ با کمک خیرین مدرسه‌ساز','آلودگی هوا؛ با تعطیلی کارخانه‌ها'],a:0,e:'زباله‌های انباشته شهرک را آزار می‌داد؛ جلال و دوستانش با کمک مردم زباله‌ها را تفکیک و زباله‌های قابل بازیافت را فروختند و با درآمدش کیسه‌ی زباله خریده و رایگان به خانواده‌ها دادند.'},
+ {l:L1,c:C1,q:'ترجمه‌ی آیه‌ی «وَتَعاوَنوا عَلَی الْبِرِّ وَالتَّقوی» کدام است؟',o:['در کارهای نیک و پرهیزکاری یکدیگر را یاری کنید','با یکدیگر مشورت کنید','در راه‌ها با احتیاط راه بروید','به یکدیگر سلام کنید'],a:0,e:'آیه‌ی ۲ سوره‌ی مائده: در کارهای نیک و پرهیزکاری یاری کنید و در گناه و ستمکاری همکاری نکنید.'},
+ {l:L1,c:C1,q:'«همکاری نکردن در گناه» یعنی چه؟',o:['کمک کردن به افراد گناهکار','تشویق نکردن کار ناپسند و فراهم نکردن مقدمات آن','فقط خودمان گناه نکنیم','سکوت کردن در برابر کارهای بد'],a:1,e:'یعنی کسی که کار ناپسندی انجام می‌دهد را تشویق نکنیم، رفتاری نکنیم که موافقت ما را برساند و مقدمات آن کار را برایش فراهم نکنیم.'},
+ {l:L1,c:C1,q:'پیام حدیث امام صادق (ع) «با همسایه‌ات خوش‌رفتاری کن تا مسلمان راستین باشی» چیست؟',o:['اهمیت ساختن خانه در محل خوب','ضرورت رفت‌وآمد زیاد با دیگران','اهمیت تعاون و رفتار خوب با همسایه','لزوم داشتن همسایه‌های ثروتمند'],a:2,e:'در اسلام به محبت و توجه به همسایه سفارش بسیار شده است؛ خوش‌رفتاری با همسایه از جلوه‌های تعاون در محله است.'},
+ {l:L2,c:C2,q:'«انفاق» یعنی چه؟',o:['یاری رساندن به نیازمندان از طریق بخشش مال، علم، توانایی‌ها و وقت','نگه داشتن پول پس‌انداز','خرج کردن پول برای تفریح','قرض گرفتن پول از دیگران'],a:0,e:'انفاق یعنی یاری رساندن به نیازمندان از طریق بخشش مال، علم، توانایی‌ها و وقت؛ قرآن به آن تأکید فراوان دارد.'},
+ {l:L2,c:C2,q:'ترجمه‌ی آیه‌ی «لَنْ تَنَالُوا الْبِرَّ حَتَّى تُنْفِقُوا مِمَّا تُحِبُّونَ» کدام است؟',o:['هرگز به نیکی نمی‌رسید مگر اینکه از آنچه دوست دارید انفاق کنید','تا می‌توانید پول پس‌انداز کنید','نیکی فقط با نماز خواندن به دست می‌آید','از آنچه دوست ندارید انفاق کنید'],a:0,e:'آیه‌ی ۹۲ سوره‌ی آل عمران؛ خدا می‌فرماید انفاق از چیزهایی که دوست دارید، سخت‌تر و باارزش‌تر است.'},
+ {l:L2,c:C2,q:'مؤسسه‌ی خیریه‌ی «محک» از چه کسانی حمایت می‌کند؟',o:['سالمندان','کودکان مبتلا به سرطان','دانش‌آموزان برتر','معلولان'],a:1,e:'محک نمونه‌ای از مؤسسات خیریه است که از کودکان مبتلا به سرطان حمایت می‌کند.'},
+ {l:L2,c:C2,q:'خیرین مدرسه‌ساز، مدارس را به صورت رایگان در اختیار چه کسی قرار می‌دهند؟',o:['شهرداری‌ها','وزارت آموزش و پرورش','وزارت کشور','سازمان اوقاف'],a:1,e:'خیرین مدرسه‌ساز مدارس را می‌سازند یا تعمیر و تجهیز می‌کنند و به صورت رایگان به وزارت آموزش و پرورش می‌دهند.'},
+ {l:L2,c:C2,q:'کدام موارد از «موقوفات» به‌شمار می‌آیند؟',o:['مدرسه و کاروانسرا','آب‌انبار و حمام عمومی','زمین کشاورزی که درآمدش به نیازمندان می‌رسد','همه‌ی گزینه‌ها'],a:3,e:'به اموال و دارایی‌هایی که وقف می‌شود موقوفات می‌گویند؛ مدرسه، کاروانسرا، آب‌انبار، حمام عمومی و زمین‌هایی که درآمدشان به نیازمندان می‌رسد همگی موقوفات‌اند.'},
+ {l:L2,c:C2,q:'به کسی که اموال خود را وقف می‌کند، چه می‌گویند؟',o:['موقوف','واقف','متولی','خیریه'],a:1,e:'واقف = کسی که اموال خود را وقف می‌کند.'},
+ {l:L2,c:C2,q:'در شرکت تعاونی، حق رأی اعضا چگونه است؟',o:['هر چه سهم بیشتری داشته باشی رأی بیشتری داری','هر عضو با هر مقدار سرمایه، یک حق رأی دارد','فقط مدیران حق رأی دارند','تازه‌واردها حق رأی ندارند'],a:1,e:'در تعاون همه با هم برابرند؛ هر عضو با هر مقدار سرمایه (سهم) فقط یک حق رأی دارد.'},
+ {l:L2,c:C2,q:'نظام اقتصادی جمهوری اسلامی ایران بر پایه‌ی کدام بخش‌هاست؟',o:['فقط بخش دولتی','دولتی و خصوصی','دولتی، خصوصی و تعاونی','خصوصی و تعاونی'],a:2,e:'بر طبق قانون اساسی، نظام اقتصادی ایران بر پایه‌ی سه بخش دولتی، خصوصی و تعاونی است.'},
+ {l:L3,c:C3,q:'حکومت کشور ما (ایران) چگونه اداره می‌شود؟',o:['فقط توسط رهبر بدون قوه‌های دیگر','به وسیله‌ی سه قوه (مقننه، قضائیه، مجریه) زیر نظر مقام رهبری','توسط مجلس به تنهایی','توسط شهرداری‌ها'],a:1,e:'حکومت جمهوری اسلامی با سه قوه زیر نظر مقام رهبری اداره می‌شود.'},
+ {l:L3,c:C3,q:'«قوه‌ی مجریه» همان ... است.',o:['مجلس شورای اسلامی','دادگستری','دولت و سازمان‌های وابسته به آن','شورای نگهبان'],a:2,e:'قوه‌ی مجریه همان دولت و سازمان‌های وابسته به دولت است.'},
+ {l:L3,c:C3,q:'پس از مقام رهبری، عالی‌ترین مقام رسمی کشور کیست؟',o:['رئیس مجلس','رئیس قوه‌ی قضائیه','رئیس‌جمهور','وزیر امور خارجه'],a:2,e:'رئیس‌جمهور پس از مقام رهبری، عالی‌ترین مقام رسمی کشور است و مسئولیت اجرای قانون اساسی را هم دارد.'},
+ {l:L3,c:C3,q:'دوره‌ی ریاست‌جمهوری در ایران چند سال است؟',o:['۲ سال','۴ سال','۵ سال','۶ سال'],a:1,e:'رئیس‌جمهور برای مدت چهار سال با رأی مستقیم مردم انتخاب می‌شود.'},
+ {l:L3,c:C3,q:'رئیس‌جمهور تا چند دوره‌ی متوالی می‌تواند در قدرت بماند؟',o:['تا بی‌نهایت دوره','حداکثر دو دوره‌ی متوالی (۴+۴ سال)','فقط یک دوره','سه دوره'],a:1,e:'او تنها برای یک دوره‌ی چهار ساله‌ی دیگر می‌تواند به صورت متوالی انتخاب مجدد شود؛ یعنی حداکثر ۸ سال پشت سر هم.'},
+ {l:L3,c:C3,q:'صلاحیت نامزدهای ریاست‌جمهوری را چه کسی تأیید می‌کند؟',o:['مجلس شورای اسلامی','شورای نگهبان','رئیس مجلس','قوه‌ی قضائیه'],a:1,e:'صلاحیت داوطلبان توسط شورای نگهبان بررسی و تأیید می‌شود.'},
+ {l:L3,c:C3,q:'حداقل سن لازم برای رأی دادن در انتخابات چند سال است؟',o:['۱۵ سال','۱۶ سال','۱۸ سال','۲۱ سال'],a:2,e:'حداقل سن رأی‌دهندگان هجده سال تعیین شده است.'},
+ {l:L3,c:C3,q:'کدام گزینه جزو شرایط رئیس‌جمهور (اصل ۱۱۵ قانون اساسی) «نیست»؟',o:['ایرانی‌الاصل بودن','تابع ایران بودن','داشتن حداقل ۴۰ سال سن','حسن سابقه، امانت و تقوا'],a:2,e:'شرایط: ایرانی‌الاصل، تابع ایران، مدیر و مدبّر، حسن سابقه و امانت و تقوی، مؤمن و معتقد به مبانی جمهوری اسلامی و مذهب رسمی کشور. «حداقل ۴۰ سال سن» جزو شرایط نیست.'},
+ {l:L3,c:C3,q:'«کابینه» (هیئت دولت) از چه کسانی تشکیل می‌شود؟',o:['نمایندگان مجلس','رئیس‌جمهور، معاونان و وزیران','اعضای شورای نگهبان','شهرداران'],a:1,e:'کابینه (هیئت دولت) از رئیس‌جمهور، معاونان و وزیران تشکیل می‌شود.'},
+ {l:L3,c:C3,q:'وزیران پیشنهادی رئیس‌جمهور، رأی اعتماد را از کجا می‌گیرند؟',o:['از مجلس شورای اسلامی','از رهبر','مستقیماً از مردم','از شورای نگهبان'],a:0,e:'وزیران پیشنهادی پس از بررسی در مجلس شورای اسلامی و رأی اعتماد نمایندگان، کارشان را آغاز می‌کنند.'},
+ {l:L4,c:C4,q:'منظور از «شهروندان» یک کشور چیست؟',o:['فقط مردم شهرهای بزرگ','همه‌ی کسانی که تابعیت آن کشور را دارند','فقط کسانی که داخل کشور زندگی می‌کنند','فقط افراد شاغل'],a:1,e:'همه‌ی کسانی که تابعیت آن کشور را دارند (شهری، روستایی، عشایر، داخل یا خارج کشور) شهروند محسوب می‌شوند.'},
+ {l:L4,c:C4,q:'کدام گزینه از «حقوق» شهروندان است؟',o:['پرداخت مالیات','احترام به قوانین کشور','بهره‌مندی از خدمات دولت و آزادی بیان و انتقاد','دفاع از کشور در جنگ'],a:2,e:'حقوق: بهره‌مندی از خدمات دولت، آزادی بیان و حق اظهار نظر و انتقاد. گزینه‌های دیگر وظایف‌اند.'},
+ {l:L4,c:C4,q:'کدام گزینه از «وظایف» شهروندان است؟',o:['استفاده از خدمات بهداشتی','پرداخت مالیات و احترام به قوانین','آزادی اظهار نظر','انتقاد از عملکرد دولت'],a:1,e:'وظایف: احترام به قوانین، همکاری با دولت، پرداخت مالیات و دفاع از کشور در جنگ.'},
+ {l:L4,c:C4,q:'درآمدهای دولت در کشور ما شامل کدام موارد است؟',o:['درآمد صادرات نفت، مالیات‌ها و سایر درآمدها','فقط مالیات‌ها','فقط درآمد نفت','کمک‌های مردم'],a:0,e:'درآمدهای دولت به سه بخش تقسیم می‌شود: صادرات نفت، مالیات‌ها و سایر درآمدها.'},
+ {l:L4,c:C4,q:'«بودجه» به زبان ساده یعنی چه؟',o:['پول بانک‌های کشور','پیش‌بینی دخل و خرج (درآمدها و هزینه‌های) دولت برای یک سال','مالیاتی که مردم می‌پردازند','پول چاپ اسکناس'],a:1,e:'بودجه سندی است که دولت در آن درآمدها و هزینه‌های کشور را برای یک سال معین می‌کند و لایحه‌ی آن باید در مجلس تصویب شود.'}
+];
+const LETTERS=['الف','ب','ج','د'];
+let answers=Array(QS.length).fill(-1), cur=0, timer=null, seconds=0, finished=false;
+
+/* ================= QUIZ LOGIC ================= */
+function startQuiz(){
+  $('#qIntro').classList.remove('show');
+  $('#qBoard').classList.add('show');
+  seconds=0;finished=false;
+  $('#qTimer').textContent='۰۰:۰۰';
+  clearInterval(timer);
+  timer=setInterval(()=>{seconds++;
+    const m=String(Math.floor(seconds/60)).padStart(2,'0'),s=String(seconds%60).padStart(2,'0');
+    $('#qTimer').textContent=faNum(m)+':'+faNum(s);
+  },1000);
+  renderQ();
+  $('#quiz').scrollIntoView({behavior:'smooth'});
+}
+function renderQ(){
+  const q=QS[cur];
+  let h='<span class="q-lesson" style="background:'+q.c+'">'+q.l+'</span>';
+  h+='<div class="q-text">'+faNum(cur+1)+'. '+q.q+'</div><div class="opts">';
+  q.o.forEach((o,i)=>{
+    h+='<button class="opt'+(answers[cur]===i?' sel':'')+'" onclick="selectOpt('+i+')"><span class="o-letter">'+LETTERS[i]+'</span><span>'+o+'</span></button>';
+  });
+  h+='</div>';
+  $('#qCard').innerHTML=h;
+  $('#qCount').textContent='سؤال '+faNum(cur+1)+' از '+faNum(QS.length);
+  $('#qProg').style.width=((cur+1)/QS.length*100)+'%';
+  $('#btnPrev').style.visibility=cur===0?'hidden':'visible';
+  $('#btnNext').style.display=cur===QS.length-1?'none':'inline-flex';
+  buildGrid();
+}
+function selectOpt(i){answers[cur]=i;renderQ();}
+function goNext(){if(cur<QS.length-1){cur++;renderQ()}}
+function goPrev(){if(cur>0){cur--;renderQ()}}
+function jumpTo(i){cur=i;renderQ()}
+function buildGrid(){
+  let h='';
+  for(let i=0;i<QS.length;i++){
+    h+='<button class="ng'+(answers[i]!==-1?' answered':'')+(i===cur?' current':'')+'" onclick="jumpTo('+i+')">'+faNum(i+1)+'</button>';
+  }
+  $('#navGrid').innerHTML=h;
+}
+function finishConfirm(){
+  const left=answers.filter(a=>a===-1).length;
+  if(left>0&&!confirm('⚠️ به '+faNum(left)+' سؤال جواب نداده‌ای! مطمئنی می‌خواهی آزمون را تمام کنی؟'))return;
+  finishQuiz();
+}
+function finishQuiz(){
+  finished=true;clearInterval(timer);
+  let score=0;const per={};
+  QS.forEach((q,i)=>{
+    per[q.l]=per[q.l]||[0,0];per[q.l][1]++;
+    if(answers[i]===q.a){score++;per[q.l][0]++}
+  });
+  const pct=Math.round(score/QS.length*100);
+  let msg,emo;
+  if(pct>=90){msg='فوق‌العاده! تو یک قهرمان واقعی هستی!';emo='🏆'}
+  else if(pct>=80){msg='آفرین! نتیجه‌ی عالی گرفتی.';emo='🎉'}
+  else if(pct>=70){msg='خیلی خوب بود! فقط کمی مرور لازم داری.';emo='👏'}
+  else if(pct>=50){msg='خوب بود، ولی باید بیشتر درس بخونی!';emo='🙂'}
+  else{msg='ناامید نشو! جزوه را دوباره بخوان و تلاش کن. تو می‌توانی!';emo='💪'}
+  let h='<div class="res-hero">';
+  h+='<svg width="0" height="0"><defs><linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#fde68a"/><stop offset="50%" stop-color="#f472b6"/><stop offset="100%" stop-color="#a5f3fc"/></linearGradient></defs></svg>';
+  h+='<div class="ring-wrap"><svg width="170" height="170" viewBox="0 0 170 170">';
+  h+='<circle class="ring-bg" cx="85" cy="85" r="74"/>';
+  h+='<circle class="ring-val" id="ringVal" cx="85" cy="85" r="74"/></svg>';
+  h+='<div class="ring-num"><div><b>'+faNum(score)+' / '+faNum(QS.length)+'</b><span>'+faNum(pct)+'٪ درست</span></div></div></div>';
+  h+='<div class="res-msg">'+emo+' '+msg+'</div>';
+  h+='<div class="res-sub">زمان پاسخ‌گویی: '+$('#qTimer').textContent+'</div></div>';
+  h+='<div class="per-lesson">';
+  Object.keys(per).forEach(k=>{
+    const p=Math.round(per[k][0]/per[k][1]*100);
+    h+='<div class="pl-card"><b>'+faNum(per[k][0])+' از '+faNum(per[k][1])+'</b><span>'+k+'</span>';
+    h+='<div class="pl-bar"><i style="width:'+p+'%;background:linear-gradient(90deg,var(--primary),var(--pink))"></i></div></div>';
+  });
+  h+='</div>';
+  h+='<h4 style="margin:26px 0 4px;font-weight:900">🔍 مرور پاسخ‌ها:</h4>';
+  QS.forEach((q,i)=>{
+    const ok=answers[i]===q.a;
+    h+='<div class="review-item '+(ok?'good':'bad')+'">';
+    h+='<div class="rv-q"><span class="mark">'+(ok?'✓':'✗')+'</span><span><b>'+faNum(i+1)+'.</b> '+q.q+'</span></div>';
+    if(!ok){
+      h+='<div class="rv-ans y">✗ پاسخ شما: '+(answers[i]===-1?'جواب ندادی':LETTERS[answers[i]]+') '+q.o[answers[i]])+'</div>';
+    }
+    h+='<div class="rv-ans c">✓ پاسخ درست: '+LETTERS[q.a]+') '+q.o[q.a]+'</div>';
+    h+='<div class="rv-exp">💡 '+q.e+'</div></div>';
+  });
+  h+='<div class="res-actions">';
+  h+='<button class="q-btn primary" onclick="restartQuiz()">🔄 تلاش دوباره</button>';
+  h+='<a class="q-btn ghost" href="#l1" style="text-decoration:none">📖 مرور درس‌ها</a>';
+  h+='</div>';
+  $('#qResult').innerHTML=h;
+  $('#qBoard').classList.remove('show');
+  $('#qResult').classList.add('show');
+  setTimeout(()=>{$('#ringVal')&&($('#ringVal').style.strokeDashoffset=465*(1-pct/100))},80);
+  $('#quiz').scrollIntoView({behavior:'smooth'});
+  if(pct>=80)setTimeout(()=>confetti(),400);
+}
+function restartQuiz(){
+  answers=Array(QS.length).fill(-1);cur=0;
+  $('#qResult').classList.remove('show');
+  $('#qIntro').classList.add('show');
+  $('#quiz').scrollIntoView({behavior:'smooth'});
+}
+
+/* ================= confetti ================= */
+function confetti(){
+  const cv=document.getElementById('confetti'),x=cv.getContext('2d');
+  cv.width=innerWidth;cv.height=innerHeight;
+  const colors=['#5b5ef0','#ec4899','#f59e0b','#10b981','#3b82f6','#fde68a'];
+  const ps=Array.from({length:160},()=>({
+    x:Math.random()*cv.width, y:-30-Math.random()*cv.height*.5,
+    w:6+Math.random()*7, h:9+Math.random()*8,
+    c:colors[Math.floor(Math.random()*colors.length)],
+    vy:2.5+Math.random()*4, vx:-1.5+Math.random()*3,
+    a:0, va:-.12+Math.random()*.24
+  }));
+  let t=0;
+  (function frame(){
+    t++;x.clearRect(0,0,cv.width,cv.height);
+    ps.forEach(p=>{p.x+=p.vx;p.y+=p.vy;p.a+=p.va;
+      x.save();x.translate(p.x,p.y);x.rotate(p.a);x.fillStyle=p.c;
+      x.fillRect(-p.w/2,-p.h/2,p.w,p.h);x.restore();});
+    if(t<340)requestAnimationFrame(frame);
+    else x.clearRect(0,0,cv.width,cv.height);
+  })();
+}
+
+</script>
+</body>
+</html>
+
